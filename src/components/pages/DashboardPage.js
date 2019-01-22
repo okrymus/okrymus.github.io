@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Container, Row, Col } from "reactstrap";
 import logo from "../img/logo.png";
 
-const HomePage = () => (
+const DashboardPage = () => (
   <Container
     fluid
     style={{
@@ -34,7 +34,7 @@ const HomePage = () => (
             lineHeight: "3rem"
           }}
         >
-          BECOME AN ADVENTURER!
+          WELCOME!
         </h1>
         <br />
         <div className="text-center">
@@ -54,4 +54,4 @@ const HomePage = () => (
   </Container>
 );
 
-export default HomePage;
+export default DashboardPage;
