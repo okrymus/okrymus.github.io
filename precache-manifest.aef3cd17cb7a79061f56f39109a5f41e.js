@@ -1,10 +1,10 @@
 self.__precacheManifest = [
   {
-    "revision": "b87b9ba532ace76ae9f6edfe9f72ded2",
-    "url": "/static/media/icons.b87b9ba5.ttf"
+    "revision": "faff92145777a3cbaf8e7367b4807987",
+    "url": "/static/media/icons.faff9214.woff"
   },
   {
-    "revision": "506caccf3dbc3d9afded",
+    "revision": "93e69ded6bc686c859fe",
     "url": "/static/css/main.1ac337ed.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = [
     "url": "/static/media/brand-icons.a1a749e8.svg"
   },
   {
-    "revision": "86d68122d708e629dd5d",
-    "url": "/static/js/1.86d68122.chunk.js"
+    "revision": "b1c7a7c4569d5ad501bb",
+    "url": "/static/js/1.b1c7a7c4.chunk.js"
   },
   {
     "revision": "229c360febb4351a89df",
@@ -24,6 +24,10 @@ self.__precacheManifest = [
     "url": "/static/media/logo.a4afa69b.png"
   },
   {
+    "revision": "9bc0884b6ccfee46a32080db9e1b7a55",
+    "url": "/static/media/python-django.9bc0884b.png"
+  },
+  {
     "revision": "549e2e6e1ae679666b344dc0eb469b5d",
     "url": "/static/media/Blog-logo.549e2e6e.png"
   },
@@ -32,28 +36,24 @@ self.__precacheManifest = [
     "url": "/static/media/profile-bg.e14bbe9b.png"
   },
   {
-    "revision": "9bc0884b6ccfee46a32080db9e1b7a55",
-    "url": "/static/media/python-django.9bc0884b.png"
-  },
-  {
-    "revision": "8e3c7f5520f5ae906c6cf6d7f3ddcd19",
-    "url": "/static/media/icons.8e3c7f55.eot"
-  },
-  {
     "revision": "9c74e172f87984c48ddf5c8108cabe67",
     "url": "/static/media/flags.9c74e172.png"
-  },
-  {
-    "revision": "faff92145777a3cbaf8e7367b4807987",
-    "url": "/static/media/icons.faff9214.woff"
   },
   {
     "revision": "0ab54153eeeca0ce03978cc463b257f7",
     "url": "/static/media/icons.0ab54153.woff2"
   },
   {
-    "revision": "506caccf3dbc3d9afded",
-    "url": "/static/js/main.506caccf.chunk.js"
+    "revision": "8e3c7f5520f5ae906c6cf6d7f3ddcd19",
+    "url": "/static/media/icons.8e3c7f55.eot"
+  },
+  {
+    "revision": "b87b9ba532ace76ae9f6edfe9f72ded2",
+    "url": "/static/media/icons.b87b9ba5.ttf"
+  },
+  {
+    "revision": "93e69ded6bc686c859fe",
+    "url": "/static/js/main.93e69ded.chunk.js"
   },
   {
     "revision": "701ae6abd4719e9c2ada3535a497b341",
@@ -64,43 +64,43 @@ self.__precacheManifest = [
     "url": "/static/media/outline-icons.cd6c777f.woff2"
   },
   {
-    "revision": "ef60a4f6c25ef7f39f2d25a748dbecfe",
-    "url": "/static/media/outline-icons.ef60a4f6.woff"
-  },
-  {
     "revision": "ad97afd3337e8cda302d10ff5a4026b8",
     "url": "/static/media/outline-icons.ad97afd3.ttf"
-  },
-  {
-    "revision": "962a1bf31c081691065fe333d9fa8105",
-    "url": "/static/media/icons.962a1bf3.svg"
   },
   {
     "revision": "82f60bd0b94a1ed68b1e6e309ce2e8c3",
     "url": "/static/media/outline-icons.82f60bd0.svg"
   },
   {
-    "revision": "a046592bac8f2fd96e994733faf3858c",
-    "url": "/static/media/brand-icons.a046592b.woff"
-  },
-  {
-    "revision": "c5ebe0b32dc1b5cc449a76c4204d13bb",
-    "url": "/static/media/brand-icons.c5ebe0b3.ttf"
-  },
-  {
-    "revision": "13db00b7a34fee4d819ab7f9838cc428",
-    "url": "/static/media/brand-icons.13db00b7.eot"
+    "revision": "962a1bf31c081691065fe333d9fa8105",
+    "url": "/static/media/icons.962a1bf3.svg"
   },
   {
     "revision": "e8c322de9658cbeb8a774b6624167c2c",
     "url": "/static/media/brand-icons.e8c322de.woff2"
   },
   {
-    "revision": "86d68122d708e629dd5d",
+    "revision": "a046592bac8f2fd96e994733faf3858c",
+    "url": "/static/media/brand-icons.a046592b.woff"
+  },
+  {
+    "revision": "13db00b7a34fee4d819ab7f9838cc428",
+    "url": "/static/media/brand-icons.13db00b7.eot"
+  },
+  {
+    "revision": "ef60a4f6c25ef7f39f2d25a748dbecfe",
+    "url": "/static/media/outline-icons.ef60a4f6.woff"
+  },
+  {
+    "revision": "c5ebe0b32dc1b5cc449a76c4204d13bb",
+    "url": "/static/media/brand-icons.c5ebe0b3.ttf"
+  },
+  {
+    "revision": "b1c7a7c4569d5ad501bb",
     "url": "/static/css/1.a6377c4d.chunk.css"
   },
   {
-    "revision": "0c33ff0f2b9b5a710299dd0509cc413d",
+    "revision": "9537fee6b970e8e87dacb89f6b361d41",
     "url": "/index.html"
   }
 ];
