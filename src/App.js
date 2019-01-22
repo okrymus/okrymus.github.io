@@ -4,6 +4,7 @@ import TopNavigation from "./components/nevigation/TopNavigation";
 import HomePage from "./components/pages/HomePage";
 import MainPage from "./components/pages/MainPage";
 import ProfilePage from "./components/pages/ProfilePage";
+import ProjectPage from "./components/pages/ProjectPage";
 
 import "./App.css";
 
@@ -16,6 +17,7 @@ const App = () => (
       <TopNavigation />
       <Route path="/main" exact component={MainPage} />
       <Route path="/profile" exact component={ProfilePage} />
+      <Route path="/projects" exact component={ProjectPage} />
     </div>
   </div>
 );

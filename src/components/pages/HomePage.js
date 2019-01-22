@@ -8,8 +8,8 @@ const HomePage = () => (
     fluid
     style={{
       height: "100vh",
-      color: "white",
-      background: "linear-gradient(to right, #692022, #1b1819)"
+      color: "white"
+      // background: "linear-gradient(to right, #692022, #1b1819)"
     }}
   >
     <Row

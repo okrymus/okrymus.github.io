@@ -29,6 +29,8 @@ export default class TopNavigation extends Component {
 
         <Menu.Item
           name="Projects"
+          as={Link}
+          to="/projects"
           active={activeItem === "Projects"}
           onClick={this.handleItemClick}
         >
@@ -41,6 +43,13 @@ export default class TopNavigation extends Component {
           onClick={this.handleItemClick}
         >
           Timeline
+        </Menu.Item>
+        <Menu.Item
+          name="Gallary"
+          active={activeItem === "Gallary"}
+          onClick={this.handleItemClick}
+        >
+          Gallary
         </Menu.Item>
         <Menu.Menu position="right">
           <Menu.Item
