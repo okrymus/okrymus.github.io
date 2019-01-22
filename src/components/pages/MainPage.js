@@ -3,13 +3,12 @@ import { Link } from "react-router-dom";
 import { Container, Row, Col } from "reactstrap";
 import logo from "../img/logo.png";
 
-const DashboardPage = () => (
+const MainPage = () => (
   <Container
     fluid
     style={{
       height: "100vh",
-      color: "white",
-      background: "linear-gradient(to right, #692022, #1b1819)"
+      color: "white"
     }}
   >
     <Row
@@ -54,4 +53,4 @@ const DashboardPage = () => (
   </Container>
 );
 
-export default DashboardPage;
+export default MainPage;

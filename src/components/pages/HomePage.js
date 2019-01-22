@@ -34,7 +34,7 @@ const HomePage = () => (
             lineHeight: "3rem"
           }}
         >
-          BECOME AN ADVENTURER!
+          Welcome to Okrymus
         </h1>
         <br />
         <div className="text-center">
