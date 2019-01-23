@@ -1,14 +1,9 @@
 import React from "react";
 import { Button, Card, Image } from "semantic-ui-react";
 import { Container } from "reactstrap";
-import pythondjango from "../img/python-django.png";
 import ProjectForm from "../forms/ProjectForm";
 import SideNev from "../nevigation/SideNavigation";
-
-const projects = [
-  { projectId: 1, name: "dddd", date: "dddd" },
-  { name: "ddaadd", date: "aaa" }
-];
+import projects from "../data/projects";
 
 const CardExampleGroups = () => (
   <Container fluid>

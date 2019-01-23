@@ -1,6 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Button, Card, Image } from "semantic-ui-react";
+import django from "../img/django.png";
+import python from "../img/python.png";
+import word from "../img/word.png";
 
 class ProjectForm extends React.Component {
   state = {};
@@ -8,7 +11,15 @@ class ProjectForm extends React.Component {
     return (
       <Card>
         <Card.Content>
-          <Image floated="right" size="mini" src="" />
+          <Image
+            floated="right"
+            size="mini"
+            src={
+              (this.props.project.type === "django" && django) ||
+              (this.props.project.type === "word" && word) ||
+              (this.props.project.type === "python" && python)
+            }
+          />
           <Card.Header>{this.props.project.name}</Card.Header>
           <Card.Meta>{this.props.project.date}</Card.Meta>
           <Card.Description>
