@@ -2,7 +2,7 @@ const projects = [
   {
     projectId: 1,
     name: "Discourz",
-    discription: "",
+    description: "web",
     date: "dddd",
     type: "django",
     link: ""
@@ -10,7 +10,7 @@ const projects = [
   {
     projectId: 2,
     name: "Game",
-    discription: "",
+    description: "",
     date: "dddd",
     type: "python",
     link: ""
@@ -18,7 +18,7 @@ const projects = [
   {
     projectId: 3,
     name: "Word",
-    discription: "",
+    description: "",
     date: "dddd",
     type: "word",
     link: ""

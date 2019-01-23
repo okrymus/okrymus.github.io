@@ -34,19 +34,19 @@ const HomePage = () => (
             lineHeight: "3rem"
           }}
         >
-          Welcome to Okrymus
+          Welcome to OKRYMUS
         </h1>
         <br />
         <div className="text-center">
           <Link
-            to="/dashboard"
+            to="/main"
             className="btn btn-primary btn-lg"
             style={{
               backgroundColor: "#9c0b0e",
               border: "none"
             }}
           >
-            JOIN THE PARTY!
+            Click here to enter!
           </Link>
         </div>
       </Col>

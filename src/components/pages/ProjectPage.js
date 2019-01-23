@@ -6,7 +6,7 @@ import SideNev from "../nevigation/SideNavigation";
 import projects from "../data/projects";
 
 const CardExampleGroups = () => (
-  <Container fluid>
+  <Container fluid style={{ marginTop: "1em" }}>
     <Card.Group>
       {projects.map(project => (
         <ProjectForm project={project} />
