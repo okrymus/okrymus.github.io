@@ -154,10 +154,10 @@ class DesktopContainer extends Component {
                 Project Name
               </Menu.Item>
               <Menu.Item
-                name="Home"
+                name="Main"
                 as={Link}
                 to="/main"
-                active={activeItem === "Home"}
+                active={activeItem === "Main"}
                 onClick={this.handleItemClick}
               >
                 Home
@@ -248,12 +248,20 @@ class MobileContainer extends Component {
           vertical
           visible={sidebarOpened}
         >
-          <Menu.Item as="a" active>
+          <Menu.Item as={Link} to="/" header onClick={this.handleItemClick}>
+            <Image size="mini" src={logo} style={{ marginRight: "1.5em" }} />
+            Project Name
+          </Menu.Item>
+          <Menu.Item name="Main" as={Link} to="/main">
             Home
           </Menu.Item>
-          <Menu.Item as="a">Work</Menu.Item>
-          <Menu.Item as="a">Company</Menu.Item>
-          <Menu.Item as="a">Careers</Menu.Item>
+          <Menu.Item name="Project" as={Link} to="/projects">
+            Projects
+          </Menu.Item>
+          <Menu.Item name="Timeline" as={Link} to="/timeline">
+            Timeline
+          </Menu.Item>
+
           <Menu.Item as="a">Log in</Menu.Item>
           <Menu.Item as="a">Sign Up</Menu.Item>
         </Sidebar>
@@ -262,7 +270,7 @@ class MobileContainer extends Component {
           <Segment
             inverted
             textAlign="center"
-            style={{ minHeight: 350, padding: "1em 0em" }}
+            style={{ minHeight: 60, padding: "1em 0em" }}
             vertical
           >
             <Container>
@@ -271,11 +279,13 @@ class MobileContainer extends Component {
                   <Icon name="sidebar" />
                 </Menu.Item>
                 <Menu.Item position="right">
-                  <Button as="a" inverted>
-                    Log in
-                  </Button>
-                  <Button as="a" inverted style={{ marginLeft: "0.5em" }}>
-                    Sign Up
+                  <Button
+                    as={Link}
+                    to="/profile"
+                    inverted
+                    style={{ marginLeft: "0.5em" }}
+                  >
+                    Profile
                   </Button>
                 </Menu.Item>
               </Menu>

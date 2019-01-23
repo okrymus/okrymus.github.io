@@ -33,18 +33,18 @@ const HomepageHeading = ({ mobile }) => (
   <Container text>
     <Header
       as="h1"
-      content="Imagine-a-Company"
+      content="PERFECTLY IMPERFECTION"
       inverted
       style={{
         fontSize: mobile ? "2em" : "4em",
         fontWeight: "normal",
         marginBottom: 0,
-        marginTop: mobile ? "1.5em" : "2em"
+        marginTop: mobile ? "1.5em" : "1m"
       }}
     />
     <Header
       as="h2"
-      content="Do whatever you want when you want to."
+      content="Sometimes errors can bring us to discover"
       inverted
       style={{
         fontSize: mobile ? "1.5em" : "1.7em",
@@ -53,7 +53,7 @@ const HomepageHeading = ({ mobile }) => (
       }}
     />
     <Button primary size="huge">
-      Get Started
+      Discover Me!
       <Icon name="right arrow" />
     </Button>
   </Container>

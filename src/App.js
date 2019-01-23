@@ -11,15 +11,21 @@ import "./App.css";
 
 const App = () => (
   <div>
-    <div>
+    {/* <div>
       <Route path="/" exact component={HomePage} />
-    </div>
+    </div> */}
     <div>
-      <TopNavigation />
-      <Route path="/main" exact component={MainPage} />
+      <TopNavigation>
+        <Route path="/" exact component={HomePage} />
+        <Route path="/main" exact component={MainPage} />
+        <Route path="/profile" exact component={ProfilePage} />
+        <Route path="/projects" exact component={ProjectPage} />
+        <Route path="/timeline" exact component={TimelinePage} />
+      </TopNavigation>
+      {/* <Route path="/main" exact component={MainPage} />
       <Route path="/profile" exact component={ProfilePage} />
       <Route path="/projects" exact component={ProjectPage} />
-      <Route path="/timeline" exact component={TimelinePage} />
+      <Route path="/timeline" exact component={TimelinePage} /> */}
     </div>
   </div>
 );
