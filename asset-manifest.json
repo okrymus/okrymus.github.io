@@ -1,14 +1,14 @@
 {
   "main.css": "/static/css/main.30f753bd.chunk.css",
-  "main.js": "/static/js/main.b8f0197b.chunk.js",
-  "main.js.map": "/static/js/main.b8f0197b.chunk.js.map",
+  "main.js": "/static/js/main.0de3372f.chunk.js",
+  "main.js.map": "/static/js/main.0de3372f.chunk.js.map",
   "static/css/1.4da6b5c9.chunk.css": "/static/css/1.4da6b5c9.chunk.css",
   "static/js/1.6351753a.chunk.js": "/static/js/1.6351753a.chunk.js",
   "static/js/1.6351753a.chunk.js.map": "/static/js/1.6351753a.chunk.js.map",
   "runtime~main.js": "/static/js/runtime~main.229c360f.js",
   "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
   "static/media/icon-logo.png": "/static/media/icon-logo.b08cfa37.png",
-  "static/media/semantic.min.css": "/static/media/icons.8e3c7f55.eot",
+  "static/media/semantic.min.css": "/static/media/icons.0ab54153.woff2",
   "static/media/logo.png": "/static/media/logo.a4afa69b.png",
   "static/media/profile-bg.png": "/static/media/profile-bg.ddb2254b.png",
   "static/media/django.png": "/static/media/django.9bc0884b.png",
@@ -16,6 +16,6 @@
   "static/css/main.30f753bd.chunk.css.map": "/static/css/main.30f753bd.chunk.css.map",
   "static/css/1.4da6b5c9.chunk.css.map": "/static/css/1.4da6b5c9.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.58f8a4ab887a4f3aa006c4c211104ccb.js": "/precache-manifest.58f8a4ab887a4f3aa006c4c211104ccb.js",
+  "precache-manifest.9ce0ade821097d4a141d5d2fa3e3efed.js": "/precache-manifest.9ce0ade821097d4a141d5d2fa3e3efed.js",
   "service-worker.js": "/service-worker.js"
 }
