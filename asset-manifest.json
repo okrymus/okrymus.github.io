@@ -1,13 +1,13 @@
 {
   "main.css": "/static/css/main.30f753bd.chunk.css",
-  "main.js": "/static/js/main.4281ab8f.chunk.js",
-  "main.js.map": "/static/js/main.4281ab8f.chunk.js.map",
+  "main.js": "/static/js/main.f90f9fad.chunk.js",
+  "main.js.map": "/static/js/main.f90f9fad.chunk.js.map",
   "static/css/1.4da6b5c9.chunk.css": "/static/css/1.4da6b5c9.chunk.css",
-  "static/js/1.d98aa2f1.chunk.js": "/static/js/1.d98aa2f1.chunk.js",
-  "static/js/1.d98aa2f1.chunk.js.map": "/static/js/1.d98aa2f1.chunk.js.map",
+  "static/js/1.e27915f0.chunk.js": "/static/js/1.e27915f0.chunk.js",
+  "static/js/1.e27915f0.chunk.js.map": "/static/js/1.e27915f0.chunk.js.map",
   "runtime~main.js": "/static/js/runtime~main.229c360f.js",
   "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
-  "static/media/semantic.min.css": "/static/media/brand-icons.c5ebe0b3.ttf",
+  "static/media/semantic.min.css": "/static/media/outline-icons.82f60bd0.svg",
   "static/media/logo.png": "/static/media/logo.a4afa69b.png",
   "static/media/icon-logo.png": "/static/media/icon-logo.b08cfa37.png",
   "static/media/profile-bg.png": "/static/media/profile-bg.ddb2254b.png",
@@ -16,6 +16,6 @@
   "static/css/main.30f753bd.chunk.css.map": "/static/css/main.30f753bd.chunk.css.map",
   "static/css/1.4da6b5c9.chunk.css.map": "/static/css/1.4da6b5c9.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.b639f9e97b58b6c7fb1e75de95a0d5c5.js": "/precache-manifest.b639f9e97b58b6c7fb1e75de95a0d5c5.js",
+  "precache-manifest.5d43372ca5b4a14d55619cb172ec76e0.js": "/precache-manifest.5d43372ca5b4a14d55619cb172ec76e0.js",
   "service-worker.js": "/service-worker.js"
 }
