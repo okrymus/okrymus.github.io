@@ -1,7 +1,16 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Button, Card, Image } from "semantic-ui-react";
-import { Header, Popup, Grid } from "semantic-ui-react";
+import { Link } from "react-router-dom";
+import {
+  Button,
+  Card,
+  Image,
+  Header,
+  Popup,
+  Label,
+  Grid,
+  Segment
+} from "semantic-ui-react";
 
 import django from "../img/django.png";
 import python from "../img/python.png";
@@ -17,15 +26,16 @@ class ProjectForm extends React.Component {
             floated="right"
             size="mini"
             src={
-              (this.props.project.type === "django" && django) ||
-              (this.props.project.type === "word" && word) ||
-              (this.props.project.type === "python" && python)
+              (this.props.project.type[0] === "django" && django) ||
+              (this.props.project.type[0] === "word" && word) ||
+              (this.props.project.type[0] === "python" && python)
             }
           />
           <Card.Header>{this.props.project.name}</Card.Header>
           <Card.Meta>{this.props.project.date}</Card.Meta>
           <Card.Description>
-            {this.props.project.description} <strong>best friends</strong>
+            {this.props.project.shortDescription}
+            <strong>best friends</strong>
           </Card.Description>
         </Card.Content>
         <Card.Content extra>
@@ -37,7 +47,12 @@ class ProjectForm extends React.Component {
           <Popup
             trigger={
               <div className="ui two buttons">
-                <Button basic color="green">
+                <Button
+                  basic
+                  color="green"
+                  as={Link}
+                  to={`projects/${this.props.project.name}`}
+                >
                   More
                 </Button>
               </div>
@@ -45,27 +60,34 @@ class ProjectForm extends React.Component {
             flowing
             hoverable
           >
-            <Grid centered divided columns={3}>
-              <Grid.Column textAlign="center">
-                <Header as="h4">Basic Plan</Header>
-                <p>
-                  <b>2</b> projects, $10 a month
-                </p>
-                <Button>Choose</Button>
+            <Grid columns={2}>
+              <Grid.Column>
+                <Segment raised>
+                  <Label as="a" color="red" ribbon>
+                    Overview
+                  </Label>
+                  <span>Account Details</span>
+                  SSSDSDFDDF
+                  <Label as="a" color="blue" ribbon>
+                    Community
+                  </Label>
+                  <span>User Reviews</span>
+                  <Image src="/images/wireframe/paragraph.png" />
+                </Segment>
               </Grid.Column>
-              <Grid.Column textAlign="center">
-                <Header as="h4">Business Plan</Header>
-                <p>
-                  <b>5</b> projects, $20 a month
-                </p>
-                <Button>Choose</Button>
-              </Grid.Column>
-              <Grid.Column textAlign="center">
-                <Header as="h4">Premium Plan</Header>
-                <p>
-                  <b>8</b> projects, $25 a month
-                </p>
-                <Button>Choose</Button>
+
+              <Grid.Column>
+                <Segment>
+                  <Label as="a" color="orange" ribbon="right">
+                    Specs
+                  </Label>
+                  <Image src="/images/wireframe/paragraph.png" />
+
+                  <Label as="a" color="teal" ribbon="right">
+                    Reviews
+                  </Label>
+                  <Image src="/images/wireframe/paragraph.png" />
+                </Segment>
               </Grid.Column>
             </Grid>
           </Popup>
