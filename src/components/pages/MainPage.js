@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import {
   Button,
   Container,
@@ -9,21 +10,9 @@ import {
   Icon,
   Image,
   List,
-  Menu,
   Responsive,
-  Segment,
-  Sidebar,
-  Visibility
+  Segment
 } from "semantic-ui-react";
-
-// Heads up!
-// We using React Static to prerender our docs with server side rendering, this is a quite simple solution.
-// For more advanced usage please check Responsive docs under the "Usage" section.
-const getWidth = () => {
-  const isSSR = typeof window === "undefined";
-
-  return isSSR ? Responsive.onlyTablet.minWidth : window.innerWidth;
-};
 
 /* eslint-disable react/no-multi-comp */
 /* Heads up! HomepageHeading uses inline styling, however it's not the best practice. Use CSS or styled components for
@@ -52,7 +41,15 @@ const HomepageHeading = ({ mobile }) => (
         marginTop: mobile ? "0.5em" : "1.5em"
       }}
     />
-    <Button primary size="huge">
+    <Button
+      primary
+      basic
+      inverted
+      color="teal"
+      size="huge"
+      as={Link}
+      to="/profile"
+    >
       Discover Me!
       <Icon name="right arrow" />
     </Button>
@@ -73,17 +70,17 @@ const HomepageLayout = () => (
     >
       <HomepageHeading />
     </Segment>
-    <Segment style={{ padding: "8em 0em" }} vertical>
+    <Segment style={{ padding: "2em 0em" }} vertical>
       <Grid container stackable verticalAlign="middle">
         <Grid.Row>
           <Grid.Column width={8}>
             <Header as="h3" style={{ fontSize: "2em" }}>
-              We Help Companies and Companions
+              Hi, I'm Tie! I am from Thailand.
             </Header>
             <p style={{ fontSize: "1.33em" }}>
-              We can give your company superpowers to do things that they never
-              thought possible. Let us delight your customers and empower your
-              needs... through pure data analytics.
+              I hope this is easy for you to remmember my nickname but my full
+              name is very long. On this site, you will discover who I am as a
+              person aside from being a developer.
             </p>
             <Header as="h3" style={{ fontSize: "2em" }}>
               We Make Bananas That Can Dance

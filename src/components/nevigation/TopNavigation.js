@@ -151,7 +151,7 @@ class DesktopContainer extends Component {
                   src={logo}
                   style={{ marginRight: "1.5em" }}
                 />
-                Project Name
+                Okrymus
               </Menu.Item>
               <Menu.Item
                 name="Main"
@@ -227,7 +227,6 @@ class MobileContainer extends Component {
   state = {};
 
   handleSidebarHide = () => this.setState({ sidebarOpened: false });
-
   handleToggle = () => this.setState({ sidebarOpened: true });
 
   render() {
@@ -248,22 +247,42 @@ class MobileContainer extends Component {
           vertical
           visible={sidebarOpened}
         >
-          <Menu.Item as={Link} to="/" header onClick={this.handleItemClick}>
+          <Menu.Item as={Link} to="/" header onClick={this.handleSidebarHide}>
             <Image size="mini" src={logo} style={{ marginRight: "1.5em" }} />
-            Project Name
+            Okrymus
           </Menu.Item>
-          <Menu.Item name="Main" as={Link} to="/main">
+          <Menu.Item
+            name="Main"
+            as={Link}
+            to="/main"
+            onClick={this.handleSidebarHide}
+          >
             Home
           </Menu.Item>
-          <Menu.Item name="Project" as={Link} to="/projects">
+          <Menu.Item
+            name="Project"
+            as={Link}
+            to="/projects"
+            onClick={this.handleSidebarHide}
+          >
             Projects
           </Menu.Item>
-          <Menu.Item name="Timeline" as={Link} to="/timeline">
+          <Menu.Item
+            name="Timeline"
+            as={Link}
+            to="/timeline"
+            onClick={this.handleSidebarHide}
+          >
             Timeline
           </Menu.Item>
-
-          <Menu.Item as="a">Log in</Menu.Item>
-          <Menu.Item as="a">Sign Up</Menu.Item>
+          <Menu.Item
+            name="Profile"
+            as={Link}
+            to="/profile"
+            onClick={this.handleSidebarHide}
+          >
+            Profile
+          </Menu.Item>
         </Sidebar>
 
         <Sidebar.Pusher dimmed={sidebarOpened}>
@@ -275,7 +294,12 @@ class MobileContainer extends Component {
           >
             <Container>
               <Menu inverted pointing secondary size="large">
-                <Menu.Item onClick={this.handleToggle}>
+                <Menu.Item
+                  onClick={
+                    !sidebarOpened ? this.handleToggle : this.handleSidebarHide
+                  }
+                  onSwipeLeft={this.handleSidebarHide}
+                >
                   <Icon name="sidebar" />
                 </Menu.Item>
                 <Menu.Item position="right">

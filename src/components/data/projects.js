@@ -22,6 +22,14 @@ const projects = [
     date: "dddd",
     type: "word",
     link: ""
+  },
+  {
+    projectId: 4,
+    name: "Word",
+    description: "",
+    date: "dddd",
+    type: "word",
+    link: ""
   }
 ];
 
