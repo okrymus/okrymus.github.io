@@ -8,7 +8,8 @@ import {
   Button,
   Divider,
   Image,
-  List
+  List,
+  Dimmer
 } from "semantic-ui-react";
 import { Container } from "reactstrap";
 import projects from "../data/projects";
@@ -23,13 +24,15 @@ export default class SubProjectPage extends Component {
 
     this.setState({ activeIndex: newIndex });
   };
+  handleOpen = () => this.setState({ active: true });
+  handleClose = () => this.setState({ active: false });
 
   project = projects.find(
     item => item.name === this.props.match.params.projectName
   );
-
   render() {
     const { activeIndex } = this.state;
+    const { active } = this.state;
 
     return (
       <Segment style={{ padding: "4em 0em" }} vertical>
@@ -101,6 +104,13 @@ export default class SubProjectPage extends Component {
           >
             <a>OVERVIEW</a>
           </Divider>
+          {this.project.img &&
+            this.project.img.map(image => (
+              <div>
+                <Image src={require(`../img/${this.project.name}/${image}`)} />
+              </div>
+            ))}
+
           <Header as="h3" style={{ fontSize: "2em" }}>
             Panupong Leenawarat
           </Header>

@@ -190,10 +190,10 @@ class DesktopContainer extends Component {
                 Gallary
               </Menu.Item>
               <Menu.Item
-                name="Personal"
+                name="Journey"
                 as={Link}
-                to="/Personal"
-                active={activeItem === "Personal"}
+                to="/journey"
+                active={activeItem === "Journey"}
                 onClick={this.handleItemClick}
               >
                 Personal
