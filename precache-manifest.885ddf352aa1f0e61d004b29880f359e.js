@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "d1636e53b42f0796fca9862952512e09",
-    "url": "/static/media/my-cartoon2.d1636e53.png"
+    "revision": "3b3e2131600285cc86d55b191c0f879a",
+    "url": "/static/media/Leenawarat_resume.3b3e2131.pdf"
   },
   {
-    "revision": "68f60ba0168ae7b5cf02",
-    "url": "/static/css/main.5ba6da23.chunk.css"
+    "revision": "4e6c5192086612e2c035",
+    "url": "/static/css/main.7259d33a.chunk.css"
   },
   {
-    "revision": "4400b669b50f5bd8afb0745ca46189e1",
-    "url": "/static/media/mexico_2.4400b669.jpg"
+    "revision": "cc818de242ce8c2fef787976380c51ad",
+    "url": "/static/media/NYC_4.cc818de2.jpg"
   },
   {
-    "revision": "a3456bd7b86f64343459",
-    "url": "/static/js/1.a3456bd7.chunk.js"
+    "revision": "3eea6d6332f6c52059b8",
+    "url": "/static/js/1.3eea6d63.chunk.js"
   },
   {
     "revision": "229c360febb4351a89df",
@@ -28,24 +28,20 @@ self.__precacheManifest = [
     "url": "/static/media/icon-logo.b08cfa37.png"
   },
   {
-    "revision": "9c74e172f87984c48ddf5c8108cabe67",
-    "url": "/static/media/flags.9c74e172.png"
-  },
-  {
     "revision": "8e3c7f5520f5ae906c6cf6d7f3ddcd19",
     "url": "/static/media/icons.8e3c7f55.eot"
   },
   {
-    "revision": "0ab54153eeeca0ce03978cc463b257f7",
-    "url": "/static/media/icons.0ab54153.woff2"
+    "revision": "9c74e172f87984c48ddf5c8108cabe67",
+    "url": "/static/media/flags.9c74e172.png"
   },
   {
     "revision": "faff92145777a3cbaf8e7367b4807987",
     "url": "/static/media/icons.faff9214.woff"
   },
   {
-    "revision": "b87b9ba532ace76ae9f6edfe9f72ded2",
-    "url": "/static/media/icons.b87b9ba5.ttf"
+    "revision": "0ab54153eeeca0ce03978cc463b257f7",
+    "url": "/static/media/icons.0ab54153.woff2"
   },
   {
     "revision": "701ae6abd4719e9c2ada3535a497b341",
@@ -56,12 +52,16 @@ self.__precacheManifest = [
     "url": "/static/media/outline-icons.ef60a4f6.woff"
   },
   {
-    "revision": "cd6c777f1945164224dee082abaea03a",
-    "url": "/static/media/outline-icons.cd6c777f.woff2"
-  },
-  {
     "revision": "962a1bf31c081691065fe333d9fa8105",
     "url": "/static/media/icons.962a1bf3.svg"
+  },
+  {
+    "revision": "b87b9ba532ace76ae9f6edfe9f72ded2",
+    "url": "/static/media/icons.b87b9ba5.ttf"
+  },
+  {
+    "revision": "cd6c777f1945164224dee082abaea03a",
+    "url": "/static/media/outline-icons.cd6c777f.woff2"
   },
   {
     "revision": "82f60bd0b94a1ed68b1e6e309ce2e8c3",
@@ -72,8 +72,8 @@ self.__precacheManifest = [
     "url": "/static/media/outline-icons.ad97afd3.ttf"
   },
   {
-    "revision": "a046592bac8f2fd96e994733faf3858c",
-    "url": "/static/media/brand-icons.a046592b.woff"
+    "revision": "e8c322de9658cbeb8a774b6624167c2c",
+    "url": "/static/media/brand-icons.e8c322de.woff2"
   },
   {
     "revision": "c5ebe0b32dc1b5cc449a76c4204d13bb",
@@ -84,8 +84,8 @@ self.__precacheManifest = [
     "url": "/static/media/brand-icons.13db00b7.eot"
   },
   {
-    "revision": "e8c322de9658cbeb8a774b6624167c2c",
-    "url": "/static/media/brand-icons.e8c322de.woff2"
+    "revision": "a046592bac8f2fd96e994733faf3858c",
+    "url": "/static/media/brand-icons.a046592b.woff"
   },
   {
     "revision": "a1a749e89f578a49306ec2b055c073da",
@@ -96,16 +96,20 @@ self.__precacheManifest = [
     "url": "/static/media/cover.4cbe053a.jpg"
   },
   {
+    "revision": "6d893f8d9322bcc4d1c3e5d261ba2523",
+    "url": "/static/media/cover.6d893f8d.jpg"
+  },
+  {
     "revision": "ddb2254b64fbbb52e1eed68b4c2a5b5a",
     "url": "/static/media/profile-bg.ddb2254b.png"
   },
   {
-    "revision": "68f60ba0168ae7b5cf02",
-    "url": "/static/js/main.68f60ba0.chunk.js"
+    "revision": "d1636e53b42f0796fca9862952512e09",
+    "url": "/static/media/my-cartoon2.d1636e53.png"
   },
   {
-    "revision": "3b3e2131600285cc86d55b191c0f879a",
-    "url": "/static/media/Leenawarat_resume.3b3e2131.pdf"
+    "revision": "4e6c5192086612e2c035",
+    "url": "/static/js/main.4e6c5192.chunk.js"
   },
   {
     "revision": "cb499467d9c192b71164a05db64a2459",
@@ -192,11 +196,27 @@ self.__precacheManifest = [
     "url": "/static/media/sign_up.46c172c9.png"
   },
   {
-    "revision": "a3456bd7b86f64343459",
-    "url": "/static/css/1.f1b49f60.chunk.css"
+    "revision": "4400b669b50f5bd8afb0745ca46189e1",
+    "url": "/static/media/mexico_2.4400b669.jpg"
   },
   {
-    "revision": "2be7ce33916e4cbb492e529f6a10481c",
+    "revision": "8b3f697dadde0c06ca20e4ee34ce3712",
+    "url": "/static/media/NYC.8b3f697d.jpg"
+  },
+  {
+    "revision": "0733309b3e6e4c9e5290f7abbad0b2d3",
+    "url": "/static/media/NYC_1.0733309b.jpg"
+  },
+  {
+    "revision": "7803c5ebddc869f49cbab6cb3edaaab6",
+    "url": "/static/media/NYC_2.7803c5eb.jpg"
+  },
+  {
+    "revision": "3eea6d6332f6c52059b8",
+    "url": "/static/css/1.24cde607.chunk.css"
+  },
+  {
+    "revision": "822a54268fbbb909ae7778d535f0e549",
     "url": "/index.html"
   }
 ];
