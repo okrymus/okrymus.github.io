@@ -6,9 +6,10 @@ import {
   Segment,
   List,
   Header,
-  Divider
+  Divider,
+  Container
 } from "semantic-ui-react";
-import { Container } from "reactstrap";
+// import { Container } from "reactstrap";
 import ProjectForm from "../forms/ProjectForm";
 import SideNev from "../nevigation/SideNavigation";
 import projects from "../data/projects";

@@ -12,7 +12,7 @@ import {
   Dimmer
 } from "semantic-ui-react";
 import { Container } from "reactstrap";
-import projects from "../data/projects";
+import journeys from "../data/journeys";
 
 export default class SubProjectPage extends Component {
   state = { activeIndex: 0 };
@@ -27,8 +27,8 @@ export default class SubProjectPage extends Component {
   handleOpen = () => this.setState({ active: true });
   handleClose = () => this.setState({ active: false });
 
-  project = projects.find(
-    item => item.name === this.props.match.params.projectName
+  journey = journeys.find(
+    item => item.name === this.props.match.params.journeyName
   );
   render() {
     const { activeIndex } = this.state;
@@ -38,78 +38,27 @@ export default class SubProjectPage extends Component {
       <Segment style={{ padding: "4em 0em" }} vertical>
         <Container text>
           <Header as="h3" style={{ fontSize: "2em" }}>
-            {this.project.name}
+            {this.journey.name}
           </Header>
-          <Accordion fluid styled>
-            <Accordion.Title
-              active={activeIndex === 0}
-              index={0}
-              onClick={this.handleClick}
-            >
-              <Icon name="dropdown" />
-              Description
-            </Accordion.Title>
-            <Accordion.Content active={activeIndex === 0}>
-              <p>
-                {this.project.description
-                  ? this.project.description
-                  : this.project.shortDescription}
-              </p>
-            </Accordion.Content>
-
-            {/* <Accordion.Title
-              active={activeIndex === 1}
-              index={1}
-              onClick={this.handleClick}
-            >
-              <Icon name="dropdown" />
-              What kinds of dogs are there?
-            </Accordion.Title>
-            <Accordion.Content active={activeIndex === 1}>
-              <p>
-                There are many breeds of dogs. Each breed varies in size and
-                temperament. Owners often select a breed of dog that they find
-                to be compatible with their own lifestyle and desires from a
-                companion.
-              </p>
-            </Accordion.Content> */}
-            {this.project.team && (
-              <div>
-                <Accordion.Title
-                  active={activeIndex === 2}
-                  index={2}
-                  onClick={this.handleClick}
-                >
-                  <Icon name="dropdown" />
-                  Team members
-                </Accordion.Title>
-                <Accordion.Content active={activeIndex === 2}>
-                  <List animated bulleted verticalAlign="middle">
-                    {this.project.team.map(person => (
-                      <List.Item>
-                        <p>{person}</p>
-                      </List.Item>
-                    ))}
-                  </List>
-                </Accordion.Content>
-              </div>
-            )}
-          </Accordion>
 
           <Divider
             as="h4"
             className="header"
             horizontal
-            style={{ margin: "3em 0em", textTransform: "uppercase" }}
+            style={{
+              margin: "3em 0em",
+              textTransform: "uppercase"
+            }}
           >
             <a>OVERVIEW</a>
           </Divider>
-          {this.project.img &&
-            this.project.img.map(image => (
+          {this.journey.img &&
+            this.journey.img.map(image => (
               <div>
                 <Image
-                  src={require(`../img/projects/${this.project.name}/${image}`)}
+                  src={require(`../img/journeys/${this.journey.name}/${image}`)}
                 />
+                <Divider />
               </div>
             ))}
 

@@ -8,6 +8,8 @@ import ProjectPage from "./components/pages/ProjectPage";
 import TimelinePage from "./components/pages/TimelinePage";
 import SubProjectPage from "./components/pages/SubProjectPage";
 import JourneyPage from "./components/pages/JourneyPage";
+import SubJourneyPage from "./components/pages/SubJourneyPage";
+import GallaryPage from "./components/pages/GallaryPage";
 
 import "./App.css";
 
@@ -23,8 +25,10 @@ const App = () => (
         <Route path="/profile" exact component={ProfilePage} />
         <Route path="/projects" exact component={ProjectPage} />
         <Route path="/timeline" exact component={TimelinePage} />
+        <Route path="/gallary" exact component={GallaryPage} />
         <Route path="/journey" exact component={JourneyPage} />
         <Route path="/projects/:projectName" exact component={SubProjectPage} />
+        <Route path="/journey/:journeyName" exact component={SubJourneyPage} />
       </TopNavigation>
       {/* <Route path="/main" exact component={MainPage} />
       <Route path="/profile" exact component={ProfilePage} />

@@ -18,22 +18,30 @@ class ProjectForm extends React.Component {
   state = {};
   render() {
     return (
-      <Card>
-        <Image src="/images/avatar/large/matthew.png" />
-        <Card.Content>
-          <Card.Header>{this.props.journey.name}</Card.Header>
-          <Card.Meta>
-            <span className="date">{this.props.journey.date}</span>
-          </Card.Meta>
-          <Card.Description>{this.props.journey.description}</Card.Description>
-        </Card.Content>
-        <Card.Content extra>
-          <a>
-            <Icon name="user" />
-            22 Friends
-          </a>
-        </Card.Content>
-      </Card>
+      <Button basic as={Link} to={`journey/${this.props.journey.name}`}>
+        <Card>
+          <Image
+            src={require(`../img/journeys/${
+              this.props.journey.name
+            }/cover.jpg`)}
+          />
+          <Card.Content>
+            <Card.Header>{this.props.journey.name}</Card.Header>
+            <Card.Meta>
+              <span className="date">{this.props.journey.date}</span>
+            </Card.Meta>
+            <Card.Description>
+              {this.props.journey.description}
+            </Card.Description>
+          </Card.Content>
+          <Card.Content extra>
+            <a>
+              <Icon name="user" />
+              22 Friends
+            </a>
+          </Card.Content>
+        </Card>
+      </Button>
     );
   }
 }

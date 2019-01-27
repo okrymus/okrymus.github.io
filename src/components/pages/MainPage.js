@@ -75,12 +75,11 @@ const HomepageLayout = () => (
         <Grid.Row>
           <Grid.Column width={8}>
             <Header as="h3" style={{ fontSize: "2em" }}>
-              Hi, I'm Tie! I am from Thailand.
+              Hi, I'm Tie!
             </Header>
             <p style={{ fontSize: "1.33em" }}>
-              I hope this is easy for you to remmember my nickname but my full
-              name is very long. On this site, you will discover who I am as a
-              person aside from being a developer.
+              On this site, you will discover who I am as a person aside from
+              being a developer.
             </p>
             <Header as="h3" style={{ fontSize: "2em" }}>
               We Make Bananas That Can Dance

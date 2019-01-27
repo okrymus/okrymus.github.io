@@ -184,6 +184,8 @@ class DesktopContainer extends Component {
               </Menu.Item>
               <Menu.Item
                 name="Gallary"
+                as={Link}
+                to="/gallary"
                 active={activeItem === "Gallary"}
                 onClick={this.handleItemClick}
               >
@@ -196,7 +198,7 @@ class DesktopContainer extends Component {
                 active={activeItem === "Journey"}
                 onClick={this.handleItemClick}
               >
-                Personal
+                Journey
               </Menu.Item>
               <Menu.Menu position="right">
                 <Menu.Item
@@ -282,6 +284,14 @@ class MobileContainer extends Component {
             onClick={this.handleSidebarHide}
           >
             Profile
+          </Menu.Item>
+          <Menu.Item
+            name="Journey"
+            as={Link}
+            to="/journey"
+            onClick={this.handleSidebarHide}
+          >
+            Journey
           </Menu.Item>
         </Sidebar>
 
