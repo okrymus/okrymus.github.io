@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "2ba6a1d5eefa217cc0eb06afbe000aca",
-    "url": "/static/media/bhcc.2ba6a1d5.png"
+    "revision": "d1636e53b42f0796fca9862952512e09",
+    "url": "/static/media/my-cartoon2.d1636e53.png"
   },
   {
-    "revision": "7494dd4a88754dd1ffa8",
-    "url": "/static/css/main.86390b65.chunk.css"
+    "revision": "6b778f7bcf160520ae76",
+    "url": "/static/css/main.d2db47a5.chunk.css"
   },
   {
-    "revision": "f93a6bd60272f049ca484de01f11468b",
-    "url": "/static/media/my-cartoon.f93a6bd6.png"
+    "revision": "4cbe053a8bd60dfd38505ee21af107bb",
+    "url": "/static/media/cover.4cbe053a.jpg"
   },
   {
-    "revision": "2082d30172ad00d8c06a",
-    "url": "/static/js/1.2082d301.chunk.js"
+    "revision": "855d874130293103df57",
+    "url": "/static/js/1.855d8741.chunk.js"
   },
   {
     "revision": "229c360febb4351a89df",
@@ -28,20 +28,16 @@ self.__precacheManifest = [
     "url": "/static/media/icon-logo.b08cfa37.png"
   },
   {
+    "revision": "9c74e172f87984c48ddf5c8108cabe67",
+    "url": "/static/media/flags.9c74e172.png"
+  },
+  {
     "revision": "8e3c7f5520f5ae906c6cf6d7f3ddcd19",
     "url": "/static/media/icons.8e3c7f55.eot"
   },
   {
     "revision": "faff92145777a3cbaf8e7367b4807987",
     "url": "/static/media/icons.faff9214.woff"
-  },
-  {
-    "revision": "b87b9ba532ace76ae9f6edfe9f72ded2",
-    "url": "/static/media/icons.b87b9ba5.ttf"
-  },
-  {
-    "revision": "0ab54153eeeca0ce03978cc463b257f7",
-    "url": "/static/media/icons.0ab54153.woff2"
   },
   {
     "revision": "701ae6abd4719e9c2ada3535a497b341",
@@ -56,56 +52,64 @@ self.__precacheManifest = [
     "url": "/static/media/outline-icons.cd6c777f.woff2"
   },
   {
-    "revision": "962a1bf31c081691065fe333d9fa8105",
-    "url": "/static/media/icons.962a1bf3.svg"
+    "revision": "b87b9ba532ace76ae9f6edfe9f72ded2",
+    "url": "/static/media/icons.b87b9ba5.ttf"
   },
   {
     "revision": "ad97afd3337e8cda302d10ff5a4026b8",
     "url": "/static/media/outline-icons.ad97afd3.ttf"
   },
   {
-    "revision": "82f60bd0b94a1ed68b1e6e309ce2e8c3",
-    "url": "/static/media/outline-icons.82f60bd0.svg"
-  },
-  {
-    "revision": "a046592bac8f2fd96e994733faf3858c",
-    "url": "/static/media/brand-icons.a046592b.woff"
-  },
-  {
     "revision": "e8c322de9658cbeb8a774b6624167c2c",
     "url": "/static/media/brand-icons.e8c322de.woff2"
+  },
+  {
+    "revision": "82f60bd0b94a1ed68b1e6e309ce2e8c3",
+    "url": "/static/media/outline-icons.82f60bd0.svg"
   },
   {
     "revision": "13db00b7a34fee4d819ab7f9838cc428",
     "url": "/static/media/brand-icons.13db00b7.eot"
   },
   {
-    "revision": "9c74e172f87984c48ddf5c8108cabe67",
-    "url": "/static/media/flags.9c74e172.png"
-  },
-  {
     "revision": "c5ebe0b32dc1b5cc449a76c4204d13bb",
     "url": "/static/media/brand-icons.c5ebe0b3.ttf"
+  },
+  {
+    "revision": "a046592bac8f2fd96e994733faf3858c",
+    "url": "/static/media/brand-icons.a046592b.woff"
   },
   {
     "revision": "a1a749e89f578a49306ec2b055c073da",
     "url": "/static/media/brand-icons.a1a749e8.svg"
   },
   {
+    "revision": "0ab54153eeeca0ce03978cc463b257f7",
+    "url": "/static/media/icons.0ab54153.woff2"
+  },
+  {
+    "revision": "962a1bf31c081691065fe333d9fa8105",
+    "url": "/static/media/icons.962a1bf3.svg"
+  },
+  {
     "revision": "ddb2254b64fbbb52e1eed68b4c2a5b5a",
     "url": "/static/media/profile-bg.ddb2254b.png"
   },
   {
-    "revision": "d1636e53b42f0796fca9862952512e09",
-    "url": "/static/media/my-cartoon2.d1636e53.png"
+    "revision": "6b778f7bcf160520ae76",
+    "url": "/static/js/main.6b778f7b.chunk.js"
+  },
+  {
+    "revision": "3b3e2131600285cc86d55b191c0f879a",
+    "url": "/static/media/Leenawarat_resume.3b3e2131.pdf"
   },
   {
     "revision": "cb499467d9c192b71164a05db64a2459",
     "url": "/static/media/umass.cb499467.png"
   },
   {
-    "revision": "7494dd4a88754dd1ffa8",
-    "url": "/static/js/main.7494dd4a.chunk.js"
+    "revision": "2ba6a1d5eefa217cc0eb06afbe000aca",
+    "url": "/static/media/bhcc.2ba6a1d5.png"
   },
   {
     "revision": "9bc0884b6ccfee46a32080db9e1b7a55",
@@ -114,14 +118,6 @@ self.__precacheManifest = [
   {
     "revision": "0ccb8695ac1408dffac87b76c1100a85",
     "url": "/static/media/python.0ccb8695.png"
-  },
-  {
-    "revision": "3b3e2131600285cc86d55b191c0f879a",
-    "url": "/static/media/Leenawarat_resume.3b3e2131.pdf"
-  },
-  {
-    "revision": "549e2e6e1ae679666b344dc0eb469b5d",
-    "url": "/static/media/Blog-logo.549e2e6e.png"
   },
   {
     "revision": "9b97f9d05f1850d6ea7f85b1af7194b1",
@@ -192,19 +188,11 @@ self.__precacheManifest = [
     "url": "/static/media/sign_up.46c172c9.png"
   },
   {
-    "revision": "7497c3fdd402587a6bf5b79d048110f6",
-    "url": "/static/media/bhcc.7497c3fd.jpg"
-  },
-  {
-    "revision": "e6a3e30b054726d2e046ea27c0392dbd",
-    "url": "/static/media/logo.e6a3e30b.gif"
-  },
-  {
-    "revision": "2082d30172ad00d8c06a",
+    "revision": "855d874130293103df57",
     "url": "/static/css/1.ac3b0ffb.chunk.css"
   },
   {
-    "revision": "3e4e24fcddfb0a94e0c0e2e69f0abaf1",
+    "revision": "8cfbabad048db13c7aaca3dd0545836e",
     "url": "/index.html"
   }
 ];
