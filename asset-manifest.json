@@ -1,7 +1,7 @@
 {
   "main.css": "/static/css/main.30e96573.chunk.css",
-  "main.js": "/static/js/main.4a793fd6.chunk.js",
-  "main.js.map": "/static/js/main.4a793fd6.chunk.js.map",
+  "main.js": "/static/js/main.de97050e.chunk.js",
+  "main.js.map": "/static/js/main.de97050e.chunk.js.map",
   "static/css/1.a3a169f4.chunk.css": "/static/css/1.a3a169f4.chunk.css",
   "static/js/1.b751adf0.chunk.js": "/static/js/1.b751adf0.chunk.js",
   "static/js/1.b751adf0.chunk.js.map": "/static/js/1.b751adf0.chunk.js.map",
@@ -18,7 +18,7 @@
   "static/media/bhcc.png": "/static/media/bhcc.2ba6a1d5.png",
   "static/media/django.png": "/static/media/django.9bc0884b.png",
   "static/media/python.png": "/static/media/python.0ccb8695.png",
-  "static/media/semantic.min.css": "/static/media/brand-icons.a1a749e8.svg",
+  "static/media/semantic.min.css": "/static/media/flags.9c74e172.png",
   "static/media/UI_Poll.png": "/static/media/UI_Poll.9b97f9d0.png",
   "static/media/UI_debate.png": "/static/media/UI_debate.1b6f680e.png",
   "static/media/UI_discussion.png": "/static/media/UI_discussion.d81dab35.png",
@@ -102,9 +102,9 @@
   "static/media/IMG_7065.jpg": "/static/media/IMG_7065.f852a843.jpg",
   "static/media/IMG_7067.jpg": "/static/media/IMG_7067.17e62225.jpg",
   "static/media/IMG_7077.jpg": "/static/media/IMG_7077.eff19111.jpg",
-  "static/css/1.a3a169f4.chunk.css.map": "/static/css/1.a3a169f4.chunk.css.map",
   "static/css/main.30e96573.chunk.css.map": "/static/css/main.30e96573.chunk.css.map",
+  "static/css/1.a3a169f4.chunk.css.map": "/static/css/1.a3a169f4.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.e47727f0b3e733052dc18383d11ab3ff.js": "/precache-manifest.e47727f0b3e733052dc18383d11ab3ff.js",
+  "precache-manifest.058ef4428a31475db4c3b90e11afcd04.js": "/precache-manifest.058ef4428a31475db4c3b90e11afcd04.js",
   "service-worker.js": "/service-worker.js"
 }
