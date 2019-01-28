@@ -278,20 +278,28 @@ class MobileContainer extends Component {
             Timeline
           </Menu.Item>
           <Menu.Item
-            name="Profile"
-            as={Link}
-            to="/profile"
-            onClick={this.handleSidebarHide}
-          >
-            Profile
-          </Menu.Item>
-          <Menu.Item
             name="Journey"
             as={Link}
             to="/journey"
             onClick={this.handleSidebarHide}
           >
             Journey
+          </Menu.Item>
+          <Menu.Item
+            name="Gallary"
+            as={Link}
+            to="/gallary"
+            onClick={this.handleSidebarHide}
+          >
+            Gallary
+          </Menu.Item>
+          <Menu.Item
+            name="Profile"
+            as={Link}
+            to="/profile"
+            onClick={this.handleSidebarHide}
+          >
+            Profile
           </Menu.Item>
         </Sidebar>
 

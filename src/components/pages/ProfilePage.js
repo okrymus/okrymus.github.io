@@ -331,14 +331,10 @@ const HomePage = () => (
     <Segment style={{ padding: "8em 0em" }} vertical>
       <Container text>
         <Header as="h3" style={{ fontSize: "2em" }}>
-          Breaking The Grid, Grabs Your Attention
+          <Icon name="trophy" />
+          Accomplishments
         </Header>
-        <p style={{ fontSize: "1.33em" }}>
-          Instead of focusing on content creation and hard work, we have learned
-          how to master the art of doing nothing by providing massive amounts of
-          whitespace and generic content that can seem massive, monolithic and
-          worth your attention.
-        </p>
+        <p style={{ fontSize: "1.33em" }} />
         <Button as="a" size="large">
           Read More
         </Button>
@@ -354,10 +350,27 @@ const HomePage = () => (
           Panupong Leenawarat
         </Header>
         <div>
-          <Button circular color="facebook" icon="facebook" />
-          <Button circular color="twitter" icon="twitter" />
-          <Button circular color="linkedin" icon="linkedin" />
-          <Button circular color="google plus" icon="google plus" />
+          <Button
+            href="https://www.facebook.com/panupong.leenawarat"
+            target="_blank"
+            circular
+            color="facebook"
+            icon="facebook"
+          />
+          <Button
+            href="https://www.linkedin.com/in/panupong-lee/"
+            target="_blank"
+            circular
+            color="linkedin"
+            icon="linkedin"
+          />
+          <Button
+            href="https://github.com/okrymus"
+            target="_blank"
+            circular
+            color="github"
+            icon="github"
+          />
         </div>
         <List>
           <List.Item>

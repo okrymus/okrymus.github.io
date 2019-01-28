@@ -13,6 +13,7 @@ import {
   Responsive,
   Segment
 } from "semantic-ui-react";
+import myimg from "../img/my_img.jpg";
 
 /* eslint-disable react/no-multi-comp */
 /* Heads up! HomepageHeading uses inline styling, however it's not the best practice. Use CSS or styled components for
@@ -90,12 +91,7 @@ const HomepageLayout = () => (
             </p>
           </Grid.Column>
           <Grid.Column floated="right" width={6}>
-            <Image
-              bordered
-              rounded
-              size="large"
-              src="/images/wireframe/white-image.png"
-            />
+            <Image bordered rounded size="large" src={myimg} />
           </Grid.Column>
         </Grid.Row>
         <Grid.Row>
@@ -168,31 +164,52 @@ const HomepageLayout = () => (
         <Grid divided inverted stackable>
           <Grid.Row>
             <Grid.Column width={3}>
-              <Header inverted as="h4" content="About" />
-              <List link inverted>
-                <List.Item as="a">Sitemap</List.Item>
-                <List.Item as="a">Contact Us</List.Item>
-                <List.Item as="a">Religious Ceremonies</List.Item>
-                <List.Item as="a">Gazebo Plans</List.Item>
+              <Header inverted as="h4" content="Contact Me" />
+              <div>
+                <Button
+                  href="https://www.facebook.com/panupong.leenawarat"
+                  target="_blank"
+                  circular
+                  color="facebook"
+                  icon="facebook"
+                />
+                <Button
+                  href="https://www.linkedin.com/in/panupong-lee/"
+                  target="_blank"
+                  circular
+                  color="linkedin"
+                  icon="linkedin"
+                />
+                <Button
+                  href="https://github.com/okrymus"
+                  target="_blank"
+                  circular
+                  color="github"
+                  icon="github"
+                />
+              </div>
+              <List>
+                <List.Item>
+                  <List.Icon name="world" />
+                  <List.Content>Origin Thailand</List.Content>
+                </List.Item>
+                <List.Item>
+                  <List.Icon name="marker" />
+                  <List.Content>Amherst, MA</List.Content>
+                </List.Item>
+                <List.Item>
+                  <List.Icon name="mail" />
+                  <List.Content>
+                    <a href="mailto:panupong_lee@me.com">panupong_lee@me.com</a>
+                  </List.Content>
+                </List.Item>
+                <List.Item>
+                  <List.Icon name="phone" />
+                  <List.Content>
+                    <a href="tel:+18572043916">8572043916</a>
+                  </List.Content>
+                </List.Item>
               </List>
-            </Grid.Column>
-            <Grid.Column width={3}>
-              <Header inverted as="h4" content="Services" />
-              <List link inverted>
-                <List.Item as="a">Banana Pre-Order</List.Item>
-                <List.Item as="a">DNA FAQ</List.Item>
-                <List.Item as="a">How To Access</List.Item>
-                <List.Item as="a">Favorite X-Men</List.Item>
-              </List>
-            </Grid.Column>
-            <Grid.Column width={7}>
-              <Header as="h4" inverted>
-                Footer Header
-              </Header>
-              <p>
-                Extra space for a call to action inside the footer that could
-                help re-engage users.
-              </p>
             </Grid.Column>
           </Grid.Row>
         </Grid>

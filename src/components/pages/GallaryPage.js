@@ -1,7 +1,7 @@
 import React from "react";
 import ImageGallery from "react-image-gallery";
 
-// import { Card, Image } from "semantic-ui-react";
+import { Segment } from "semantic-ui-react";
 
 const files = [
   "DSC_2805.jpg",
@@ -170,6 +170,10 @@ function importAll2() {
 
 const itemsl = importAll2();
 
-const GallaryPage = () => <ImageGallery items={itemsl} />;
+const GallaryPage = () => (
+  <Segment style={{ padding: "0em 0em" }} vertical>
+    <ImageGallery items={itemsl} />
+  </Segment>
+);
 
 export default GallaryPage;
