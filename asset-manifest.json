@@ -1,10 +1,10 @@
 {
   "main.css": "/static/css/main.30e96573.chunk.css",
-  "main.js": "/static/js/main.de97050e.chunk.js",
-  "main.js.map": "/static/js/main.de97050e.chunk.js.map",
+  "main.js": "/static/js/main.bad07942.chunk.js",
+  "main.js.map": "/static/js/main.bad07942.chunk.js.map",
   "static/css/1.a3a169f4.chunk.css": "/static/css/1.a3a169f4.chunk.css",
-  "static/js/1.b751adf0.chunk.js": "/static/js/1.b751adf0.chunk.js",
-  "static/js/1.b751adf0.chunk.js.map": "/static/js/1.b751adf0.chunk.js.map",
+  "static/js/1.11148366.chunk.js": "/static/js/1.11148366.chunk.js",
+  "static/js/1.11148366.chunk.js.map": "/static/js/1.11148366.chunk.js.map",
   "runtime~main.js": "/static/js/runtime~main.229c360f.js",
   "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
   "static/media/DSC_3256.jpg": "/static/media/DSC_3256.0f1c03eb.jpg",
@@ -18,7 +18,7 @@
   "static/media/bhcc.png": "/static/media/bhcc.2ba6a1d5.png",
   "static/media/django.png": "/static/media/django.9bc0884b.png",
   "static/media/python.png": "/static/media/python.0ccb8695.png",
-  "static/media/semantic.min.css": "/static/media/flags.9c74e172.png",
+  "static/media/semantic.min.css": "/static/media/brand-icons.c5ebe0b3.ttf",
   "static/media/UI_Poll.png": "/static/media/UI_Poll.9b97f9d0.png",
   "static/media/UI_debate.png": "/static/media/UI_debate.1b6f680e.png",
   "static/media/UI_discussion.png": "/static/media/UI_discussion.d81dab35.png",
@@ -105,6 +105,6 @@
   "static/css/main.30e96573.chunk.css.map": "/static/css/main.30e96573.chunk.css.map",
   "static/css/1.a3a169f4.chunk.css.map": "/static/css/1.a3a169f4.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.058ef4428a31475db4c3b90e11afcd04.js": "/precache-manifest.058ef4428a31475db4c3b90e11afcd04.js",
+  "precache-manifest.87d858516d68e5470343b2efce7f74ac.js": "/precache-manifest.87d858516d68e5470343b2efce7f74ac.js",
   "service-worker.js": "/service-worker.js"
 }
