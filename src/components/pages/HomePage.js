@@ -1,13 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Embed } from "semantic-ui-react";
 import { Container, Row, Col } from "reactstrap";
 import logo from "../img/logo.png";
+import mexicoCover from "../img/videocover/Mexico.png";
 
 const HomePage = () => (
   <Container
     fluid
     style={{
-      height: "100vh",
+      height: "105vh",
       color: "white"
       // background: "linear-gradient(to right, #692022, #1b1819)"
     }}
@@ -36,6 +38,7 @@ const HomePage = () => (
         >
           Welcome to OKRYMUS
         </h1>
+
         <br />
         <div className="text-center">
           <Link
@@ -49,6 +52,15 @@ const HomePage = () => (
             Click here to enter!
           </Link>
         </div>
+        <br />
+
+        <Embed
+          autoplay
+          id="317699592"
+          placeholder={mexicoCover}
+          source="vimeo"
+          hd
+        />
       </Col>
     </Row>
   </Container>

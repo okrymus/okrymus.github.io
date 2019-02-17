@@ -22,7 +22,7 @@ class ProjectForm extends React.Component {
         <Card>
           <Image
             src={require(`../img/journeys/${
-              this.props.journey.name
+              this.props.journey.folderName
             }/cover.jpg`)}
           />
           <Card.Content>
@@ -31,13 +31,13 @@ class ProjectForm extends React.Component {
               <span className="date">{this.props.journey.date}</span>
             </Card.Meta>
             <Card.Description>
-              {this.props.journey.description}
+              {this.props.journey.shortDescription}
             </Card.Description>
           </Card.Content>
           <Card.Content extra>
             <a>
-              <Icon name="user" />
-              22 Friends
+              <Icon name="plus" />
+              More
             </a>
           </Card.Content>
         </Card>

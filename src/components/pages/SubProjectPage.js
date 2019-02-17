@@ -9,13 +9,34 @@ import {
   Divider,
   Image,
   List,
-  Dimmer
+  Grid
 } from "semantic-ui-react";
+import { Document, Page, pdfjs } from "react-pdf";
+import GifPlayer from "react-gif-player";
+
 import { Container } from "reactstrap";
 import projects from "../data/projects";
 
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${
+  pdfjs.version
+}/pdf.worker.js`;
 export default class SubProjectPage extends Component {
-  state = { activeIndex: 0 };
+  state = { activeIndex: 0, numPages: null, pageNumber: 1 };
+
+  onDocumentLoadSuccess = ({ numPages }) => {
+    this.setState({ numPages });
+  };
+
+  goToPrevPage = () =>
+    this.setState(state => ({
+      pageNumber:
+        state.pageNumber - 1 === 0 ? state.numPages : state.pageNumber - 1
+    }));
+  goToNextPage = () =>
+    this.setState(state => ({
+      pageNumber:
+        state.pageNumber + 1 === state.numPages + 1 ? 1 : state.pageNumber + 1
+    }));
 
   handleClick = (e, titleProps) => {
     const { index } = titleProps;
@@ -33,7 +54,7 @@ export default class SubProjectPage extends Component {
   render() {
     const { activeIndex } = this.state;
     const { active } = this.state;
-
+    const { pageNumber, numPages } = this.state;
     return (
       <Segment style={{ padding: "4em 0em" }} vertical>
         <Container text>
@@ -94,6 +115,21 @@ export default class SubProjectPage extends Component {
                 </Accordion.Content>
               </div>
             )}
+            {this.project.award && (
+              <div>
+                <Accordion.Title
+                  active={activeIndex === 2}
+                  index={2}
+                  onClick={this.handleClick}
+                >
+                  <Icon name="dropdown" />
+                  Award
+                </Accordion.Title>
+                <Accordion.Content active={activeIndex === 2}>
+                  <p>{this.project.award}</p>
+                </Accordion.Content>
+              </div>
+            )}
           </Accordion>
 
           <Divider
@@ -104,6 +140,86 @@ export default class SubProjectPage extends Component {
           >
             <a>OVERVIEW</a>
           </Divider>
+          {this.project.gif && (
+            <Grid centered>
+              {this.project.gif.map(file => (
+                <div>
+                  {file[0] && (
+                    <Header
+                      as="h3"
+                      style={{ fontSize: "1.5em", marginTop: "1.5em" }}
+                      textAlign="left"
+                    >
+                      {file[0]}
+                    </Header>
+                  )}
+                  <GifPlayer
+                    style={{
+                      width:
+                        window.innerWidth <= 500 ? window.innerWidth : "100%"
+                    }}
+                    gif={require(`../img/projects/${this.project.name}/${
+                      file[1]
+                    }`)}
+                    autoplay
+                  />
+                </div>
+              ))}
+              {/* <div>
+                <GifPlayer
+                  style={{
+                    width: window.innerWidth <= 500 ? window.innerWidth : "100%"
+                  }}
+                  gif={require(`../img/projects/${this.project.name}/${
+                    this.project.gif[0][1]
+                  }`)}
+                  autoplay
+                />
+              </div> */}
+            </Grid>
+          )}
+          {this.project.pdf && (
+            <Grid centered>
+              {/* <Grid.Row>
+                <Button onClick={this.goToPrevPage}>Prev</Button>
+                <Button onClick={this.goToNextPage}>Next</Button>
+              </Grid.Row> */}
+              <Grid.Row>
+                <div
+                  style={{
+                    alignItems: "center",
+                    verticalAlign: "middle"
+                  }}
+                >
+                  <Button
+                    onClick={this.goToPrevPage}
+                    content="Prev"
+                    icon="left arrow"
+                    labelPosition="left"
+                  />
+                  <Button
+                    onClick={this.goToNextPage}
+                    content="Next"
+                    icon="right arrow"
+                    labelPosition="right"
+                  />
+                  <Document
+                    file={require(`../data/pdf/${this.project.pdf}`)}
+                    onLoadSuccess={this.onDocumentLoadSuccess}
+                  >
+                    <Page
+                      pageNumber={pageNumber}
+                      scale={window.innerWidth <= 500 ? "0.6" : "1.5"}
+                    />
+                  </Document>
+                </div>
+              </Grid.Row>
+
+              <p>
+                Page {pageNumber} of {numPages}
+              </p>
+            </Grid>
+          )}
           {this.project.img &&
             this.project.img.map(image => (
               <div>

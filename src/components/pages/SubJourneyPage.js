@@ -40,7 +40,7 @@ export default class SubProjectPage extends Component {
           <Header as="h3" style={{ fontSize: "2em" }}>
             {this.journey.name}
           </Header>
-
+          <p style={{ fontSize: "1.33em" }}>{this.journey.description}</p>
           <Divider
             as="h4"
             className="header"
@@ -56,7 +56,11 @@ export default class SubProjectPage extends Component {
             this.journey.img.map(image => (
               <div>
                 <Image
-                  src={require(`../img/journeys/${this.journey.name}/${image}`)}
+                  centered
+                  size="big"
+                  src={require(`../img/journeys/${
+                    this.journey.folderName
+                  }/${image}`)}
                 />
                 <Divider />
               </div>

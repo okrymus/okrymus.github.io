@@ -75,7 +75,7 @@ const CardExampleGroups = () => (
   //     </Card.Group>
   //   </Container>
   <Segment style={{ padding: "2em 0em" }} vertical>
-    <Container>
+    <Container fluid>
       <Card.Group>
         {projects.map(project => (
           <ProjectForm project={project} />

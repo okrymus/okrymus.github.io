@@ -10,6 +10,7 @@ import {
   Flag,
   Icon,
   Divider,
+  Rating,
   List
 } from "semantic-ui-react";
 import logo from "../img/logo.png";
@@ -51,40 +52,6 @@ const HomePage = () => (
               the computer science associate major at Bunker Hill Community
               College.
             </p>
-            <Header as="h3" style={{ fontSize: "2em" }}>
-              <Icon name="language" />
-              Language
-            </Header>
-            <List animated verticalAlign="middle">
-              <List.Item>
-                <List.Content>
-                  <List.Header>
-                    {" "}
-                    <Flag name="th" />
-                    Thai
-                  </List.Header>
-                </List.Content>
-              </List.Item>
-              <List.Item>
-                <List.Content>
-                  <List.Header>
-                    {" "}
-                    <Flag name="gb" />
-                    English
-                  </List.Header>
-                </List.Content>
-              </List.Item>
-              <List.Item>
-                <List.Content>
-                  <List.Header>
-                    {" "}
-                    <Flag name="cn" />
-                    Mandarin
-                    <List.Description> limited</List.Description>
-                  </List.Header>
-                </List.Content>
-              </List.Item>
-            </List>
           </Grid.Column>
           <Grid.Column floated="right" width={6}>
             <Image rounded size="large" src={myCartoon} />
@@ -330,14 +297,157 @@ const HomePage = () => (
     </Segment>
     <Segment style={{ padding: "8em 0em" }} vertical>
       <Container text>
-        <Header as="h3" style={{ fontSize: "2em" }}>
-          <Icon name="trophy" />
-          Accomplishments
-        </Header>
-        <p style={{ fontSize: "1.33em" }} />
-        <Button as="a" size="large">
-          Read More
-        </Button>
+        <Grid divided="vertically">
+          <Grid.Row columns={2}>
+            <Grid.Column>
+              <Header as="h3" style={{ fontSize: "2em" }}>
+                <Icon name="language" />
+                Language
+              </Header>
+              <p style={{ fontSize: "1.33em" }}>
+                <List animated verticalAlign="middle">
+                  <List.Item>
+                    <List.Content>
+                      <List.Header as="a">
+                        <Flag name="th" />
+                        Thai{" "}
+                        <Rating
+                          defaultRating={5}
+                          maxRating={5}
+                          size="massive"
+                          disabled
+                        />
+                      </List.Header>
+                      <List.Description>Native</List.Description>
+                    </List.Content>
+                  </List.Item>
+                  <List.Item>
+                    <List.Content>
+                      <List.Header as="a">
+                        <Flag name="gb" />
+                        English{" "}
+                        <Rating
+                          defaultRating={4}
+                          maxRating={5}
+                          size="massive"
+                          disabled
+                        />
+                      </List.Header>
+                      <List.Description>
+                        Professional working proficiency
+                      </List.Description>
+                    </List.Content>
+                  </List.Item>
+                  <List.Item>
+                    <List.Content>
+                      <List.Header as="a">
+                        <Flag name="cn" />
+                        Mandarin{" "}
+                        <Rating
+                          defaultRating={1}
+                          maxRating={5}
+                          size="massive"
+                          disabled
+                        />
+                      </List.Header>{" "}
+                      <List.Description>
+                        Elementary proficiency
+                      </List.Description>
+                    </List.Content>
+                  </List.Item>
+                </List>
+              </p>{" "}
+            </Grid.Column>
+            <Grid.Column>
+              <Header as="h3" style={{ fontSize: "2em" }}>
+                <Icon name="binoculars" />
+                Interests
+              </Header>
+              <p style={{ fontSize: "1.33em" }}>
+                <Grid divided="vertically">
+                  <Grid.Row columns={2}>
+                    <Grid.Column>
+                      <List animated verticalAlign="middle">
+                        <List.Item>
+                          <List.Content>
+                            <List.Header as="a">
+                              <Icon name="music" size="large" />
+                              Piano{" "}
+                            </List.Header>
+                          </List.Content>
+                        </List.Item>
+                        <List.Item>
+                          <List.Content>
+                            <List.Header as="a">
+                              <Icon name="food" size="large" />
+                              Cooking{" "}
+                            </List.Header>
+                          </List.Content>
+                        </List.Item>
+                        <List.Item>
+                          <List.Content>
+                            <List.Header as="a">
+                              <Icon
+                                name="money bill alternate outline"
+                                size="large"
+                              />
+                              Trading{" "}
+                            </List.Header>{" "}
+                          </List.Content>
+                        </List.Item>
+                        <List.Item>
+                          <List.Content>
+                            <List.Header as="a">
+                              <Icon name="plane" size="large" />
+                              Trips{" "}
+                            </List.Header>{" "}
+                          </List.Content>
+                        </List.Item>
+                      </List>
+                    </Grid.Column>
+                    <Grid.Column>
+                      <List animated verticalAlign="middle">
+                        <List.Item>
+                          <List.Content>
+                            <List.Header as="a">
+                              <Icon name="photo" size="large" />
+                              Photography{" "}
+                            </List.Header>{" "}
+                          </List.Content>
+                        </List.Item>
+                        <List.Item>
+                          <List.Content>
+                            <List.Header as="a">
+                              <Icon name="male" size="large" />
+                              Modeling{" "}
+                            </List.Header>{" "}
+                          </List.Content>
+                        </List.Item>
+                        <List.Item>
+                          <List.Content>
+                            <List.Header as="a">
+                              <Icon name="snowflake" size="large" />
+                              Ski/Snowboard{" "}
+                            </List.Header>{" "}
+                          </List.Content>
+                        </List.Item>
+                        <List.Item>
+                          <List.Content>
+                            <List.Header as="a">
+                              <Icon name="map" size="large" />
+                              Hiking{" "}
+                            </List.Header>{" "}
+                          </List.Content>
+                        </List.Item>
+                      </List>
+                    </Grid.Column>
+                  </Grid.Row>
+                </Grid>
+              </p>{" "}
+            </Grid.Column>
+          </Grid.Row>
+        </Grid>
+
         <Divider
           as="h4"
           className="header"

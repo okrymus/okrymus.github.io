@@ -15,7 +15,14 @@ import {
 import django from "../img/django.png";
 import python from "../img/python.png";
 import word from "../img/word.png";
+import angular from "../img/angular.png";
+import react from "../img/react.png";
+import sklearn from "../img/sklearn.png";
+import csharp from "../img/csharp.png";
+import cplusplus from "../img/cplusplus.png";
+import java from "../img/java.png";
 
+const colors = ["blue", "teal", "yellow"];
 class ProjectForm extends React.Component {
   state = {};
   render() {
@@ -28,14 +35,36 @@ class ProjectForm extends React.Component {
             src={
               (this.props.project.type[0] === "django" && django) ||
               (this.props.project.type[0] === "word" && word) ||
-              (this.props.project.type[0] === "python" && python)
+              (this.props.project.type[0] === "python" && python) ||
+              (this.props.project.type[0] === "react" && react) ||
+              (this.props.project.type[0] === "sklearn" && sklearn) ||
+              (this.props.project.type[0] === "c#" && csharp) ||
+              (this.props.project.type[0] === "c++" && cplusplus) ||
+              (this.props.project.type[0] === "Java" && java) ||
+              (this.props.project.type[0] === "angular" && angular)
             }
           />
           <Card.Header>{this.props.project.name}</Card.Header>
           <Card.Meta>{this.props.project.date}</Card.Meta>
           <Card.Description>
             {this.props.project.shortDescription}
-            <strong>best friends</strong>
+            <div>
+              {this.props.project.type.map((kind, i) => (
+                <Label color={colors[i % 3]} image>
+                  {kind}
+                </Label>
+              ))}
+
+              {/* <Label as="a" color="blue" image>
+                Veronika
+              </Label>
+              <Label as="a" color="teal" image>
+                Veronika
+              </Label>
+              <Label as="a" color="yellow" image>
+                Helen
+              </Label> */}
+            </div>{" "}
           </Card.Description>
         </Card.Content>
         <Card.Content extra>
@@ -44,53 +73,26 @@ class ProjectForm extends React.Component {
               More
             </Button>
           </div> */}
-          <Popup
-            trigger={
-              <div className="ui two buttons">
-                <Button
-                  basic
-                  color="green"
-                  as={Link}
-                  to={`projects/${this.props.project.name}`}
-                >
-                  More
-                </Button>
-              </div>
-            }
-            flowing
-            hoverable
-          >
-            <Grid columns={2}>
-              <Grid.Column>
-                <Segment raised>
-                  <Label as="a" color="red" ribbon>
-                    Overview
-                  </Label>
-                  <span>Account Details</span>
-                  SSSDSDFDDF
-                  <Label as="a" color="blue" ribbon>
-                    Community
-                  </Label>
-                  <span>User Reviews</span>
-                  <Image src="/images/wireframe/paragraph.png" />
-                </Segment>
-              </Grid.Column>
-
-              <Grid.Column>
-                <Segment>
-                  <Label as="a" color="orange" ribbon="right">
-                    Specs
-                  </Label>
-                  <Image src="/images/wireframe/paragraph.png" />
-
-                  <Label as="a" color="teal" ribbon="right">
-                    Reviews
-                  </Label>
-                  <Image src="/images/wireframe/paragraph.png" />
-                </Segment>
-              </Grid.Column>
-            </Grid>
-          </Popup>
+          <div className="ui two buttons">
+            <Button
+              basic
+              color="green"
+              as={Link}
+              to={`projects/${this.props.project.name}`}
+            >
+              More
+            </Button>
+            {this.props.project.sourceCode && (
+              <Button
+                basic
+                color="red"
+                target="_blank"
+                href={this.props.project.sourceCode}
+              >
+                View Source
+              </Button>
+            )}
+          </div>
         </Card.Content>
       </Card>
     );
