@@ -1,7 +1,7 @@
 {
   "main.css": "/static/css/main.d02b5c95.chunk.css",
-  "main.js": "/static/js/main.07a16264.chunk.js",
-  "main.js.map": "/static/js/main.07a16264.chunk.js.map",
+  "main.js": "/static/js/main.648cbb67.chunk.js",
+  "main.js.map": "/static/js/main.648cbb67.chunk.js.map",
   "static/css/1.2f1bb8be.chunk.css": "/static/css/1.2f1bb8be.chunk.css",
   "static/js/1.d3447e3e.chunk.js": "/static/js/1.d3447e3e.chunk.js",
   "static/js/1.d3447e3e.chunk.js.map": "/static/js/1.d3447e3e.chunk.js.map",
@@ -26,7 +26,7 @@
   "static/media/sklearn.png": "/static/media/sklearn.964a9ceb.png",
   "static/media/csharp.png": "/static/media/csharp.af3793ff.png",
   "static/media/cplusplus.png": "/static/media/cplusplus.58393424.png",
-  "static/media/semantic.min.css": "/static/media/brand-icons.c5ebe0b3.ttf",
+  "static/media/semantic.min.css": "/static/media/brand-icons.a1a749e8.svg",
   "static/media/deposit.gif": "/static/media/deposit.555477ca.gif",
   "static/media/transfer.gif": "/static/media/transfer.d1cc5edc.gif",
   "static/media/withdrawal.gif": "/static/media/withdrawal.940bbc36.gif",
@@ -168,6 +168,6 @@
   "static/css/1.2f1bb8be.chunk.css.map": "/static/css/1.2f1bb8be.chunk.css.map",
   "static/css/main.d02b5c95.chunk.css.map": "/static/css/main.d02b5c95.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.dab2310a719fddcd8af521b4d9484d50.js": "/precache-manifest.dab2310a719fddcd8af521b4d9484d50.js",
+  "precache-manifest.04c114feb3ed1e44df3ebb317d67ca07.js": "/precache-manifest.04c114feb3ed1e44df3ebb317d67ca07.js",
   "service-worker.js": "/service-worker.js"
 }
