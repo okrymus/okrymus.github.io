@@ -15,8 +15,7 @@ const journeys = [
     name: "New York Christmas 2018",
     folderName: "New York Christmas 2018",
     shortDescription: "",
-    description:
-      "Cerebrate new year at Maxico City. And being like a king at Cancun",
+    description: "",
     date: "Dec 12, 2018",
     img: ["cover.jpg", "NYC_1.jpg", "NYC_2.jpg", "NYC.jpg", "NYC_4.jpg"]
   },
@@ -82,6 +81,40 @@ const journeys = [
       "IMG_6.jpg",
       "IMG_8.jpg"
     ]
+  },
+
+  {
+    journeyID: 6,
+    name: "Once I was in a middle school in US, But what",
+    folderName: "USA2009",
+    shortDescription: "Friendship is Everywhere!",
+    description:
+      "In 2009, my older sister and I flew from Thailand to the United States to take our summer vocation. When we arrived in Houston, my sister strongly wanted to try to enroll in a general school as American. Therefore, we decided to apply to a school. Fortunately, although we traveled alone, we had our cousin there who was working there. Consequently, we could apply a general school in US easily because we were supported by educate laws, and then I studied in Yes Prep Middle School.  Studying there caused me to conceal the truth that I had to leave after two months; moreover, I had not elicited this even before I left everyone who I met there. Everything that occurred there seems like it was yesterday.My sister and I had to apply a different school because she was in grade 10th, while I was in grade 7th.It caused us had to help ourselves and tried to speak English more than I had used before.I almost never met my sister during school although my school and her school are connected together.While I was studying in the school, I had a lot of chances to meet and make friends.Even though I encountered many problems, my friends always helped me to resolve them, but I still had one problem that nobody could help me to resolve it.The big my problem was conversation in English.I could not convey all of my requirements or my personality.I felt cramped and was in a narrow space because I was in this situation for a long time.As the result, I counted the days and waited for the last day.On my last day in the school, I did everything normally, and nobody included my friends knew that I would disappear on the next day.I repeated my memory that I did not say goodbye to my friend.I think I was selfish and it was the wrong decision. After returning to my country, I continued to study in my real school.It was my school before going there.I regret that I did not say any word, even an easy word like goodbye to my friend there.The story occurred six years ago.The fade memory and my friendship there seem they were destroyed since I left there, but I still hoped I would find a way to meet them again.Someday I searched on the Internet as normal days.I recalled the memory and my friends, and then I tried to find them on Facebook.I found friends who are across the world, and whom I had never had contacted in six years, and we talked to each other again and truly in the deep of my mind was guilty.One of them told me that they just had talked about me a week ago.I really appreciated that they could remember my story when I was there, and technology helped me and my friends to be more than just acquaintances. The story that I mentioned affected my future.After coming back to normal, my grades were better than before I got the experience.While sometime I though the studying that place taught me to have more responsibility; in additional, the next term, I was a leader in my class.In 2014, I graduated from my high school.I planed to continue my education in US and face many challenges, and especially my old friends.Eventually, now I am in US and I am still waiting someday that I will meet them.This time will not be same the past because the words that I will speak with them is hello.",
+    date: "May, 2009",
+    img: [
+      "DSC03640.jpg",
+      "DSC03632.jpg",
+      "DSC03635.jpg",
+      "cover.jpg",
+      "DSC03643.jpg",
+      "DSC03649.jpg",
+      "DSC03678.jpg",
+      "DSC03633.jpg",
+      "DSC03636.jpg",
+      "DSC03641.jpg",
+      "DSC03648.jpg",
+      "DSC03675.jpg",
+      "DSC03680.jpg"
+    ]
+  },
+  {
+    journeyID: 6,
+    name: "Unseen, Unheard But Always Near, My Sister",
+    folderName: "AMP",
+    shortDescription: "2018 is year I lost my lovely sister!",
+    description: "",
+    date: "September, 2018",
+    vimeo: [["317922502", "DSCF3929.jpg"], ["317922984", "IMG_4526.JPG"]]
   }
 ];
 

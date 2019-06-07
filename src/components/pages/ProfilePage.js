@@ -16,7 +16,7 @@ import {
 import logo from "../img/logo.png";
 import profilebg from "../img/profile-bg.png";
 import myCartoon from "../img/my-cartoon2.png";
-import resume from "../data/Leenawarat_resume.pdf";
+import resume from "../data/Panupong_Leenawarat_resume.pdf";
 import umass from "../img/umass.png";
 import bhcc from "../img/bhcc.png";
 

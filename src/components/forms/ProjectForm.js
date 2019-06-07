@@ -21,6 +21,7 @@ import sklearn from "../img/sklearn.png";
 import csharp from "../img/csharp.png";
 import cplusplus from "../img/cplusplus.png";
 import java from "../img/java.png";
+import android from "../img/android.png";
 
 const colors = ["blue", "teal", "yellow"];
 class ProjectForm extends React.Component {
@@ -41,6 +42,7 @@ class ProjectForm extends React.Component {
               (this.props.project.type[0] === "c#" && csharp) ||
               (this.props.project.type[0] === "c++" && cplusplus) ||
               (this.props.project.type[0] === "Java" && java) ||
+              (this.props.project.type[0] === "android" && android) ||
               (this.props.project.type[0] === "angular" && angular)
             }
           />

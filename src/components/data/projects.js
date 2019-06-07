@@ -204,7 +204,7 @@ const projects = [
     sourceCode: "https://github.com/okrymus/Currency-Exchange"
   },
   {
-    projectId: 15,
+    projectId: 16,
     name: "Word Cloud",
     shortDescription:
       "The program is focusing on database and data organization.",
@@ -213,6 +213,25 @@ const projects = [
     date: "2016",
     type: ["Java"],
     sourceCode: "https://github.com/okrymus/Word-Cloud"
+  },
+  {
+    projectId: 17,
+    name: "Amath Game",
+    shortDescription: "Multi-Player game like Scabble",
+    description:
+      "Amath Game is a multi- player game. It allows users to play this game over the internet. The users need to create accout and sign in to play the game.The game stores users' records and statistics in mySQL database. Moreover, every users can see his/her rank.",
+    date: "2016",
+    type: ["Java", "mail", "mySQL"],
+    sourceCode: "https://github.com/okrymus/Amath"
+  },
+  {
+    projectId: 18,
+    name: "German-English Dictionary",
+    shortDescription: "Simple Dictionary Android App",
+    description: "",
+    date: "2017",
+    type: ["android", "Java", "Android Studio"],
+    sourceCode: "https://github.com/okrymus/Ger-EngDictionary"
   }
 ];
 

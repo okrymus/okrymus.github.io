@@ -9,7 +9,8 @@ import {
   Divider,
   Image,
   List,
-  Dimmer
+  Dimmer,
+  Embed
 } from "semantic-ui-react";
 import { Container } from "reactstrap";
 import journeys from "../data/journeys";
@@ -61,6 +62,22 @@ export default class SubProjectPage extends Component {
                   src={require(`../img/journeys/${
                     this.journey.folderName
                   }/${image}`)}
+                />
+                <Divider />
+              </div>
+            ))}
+
+          {this.journey.vimeo &&
+            this.journey.vimeo.map(videoID => (
+              <div>
+                <Embed
+                  autoplay
+                  id={videoID[0]}
+                  placeholder={require(`../img/journeys/${
+                    this.journey.folderName
+                  }/${videoID[1]}`)}
+                  source="vimeo"
+                  hd
                 />
                 <Divider />
               </div>
