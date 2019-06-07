@@ -59,7 +59,7 @@ const HomePage = () => (
         </Grid.Row>
         <Grid.Row>
           <Grid.Column textAlign="center">
-            <a href={resume} download="Leenawarat_Resume">
+            <a href={resume} download="Panupong_Leenawarat_resume">
               <Button color="grey" size="huge">
                 DOWNLOAD RESUME
               </Button>{" "}
