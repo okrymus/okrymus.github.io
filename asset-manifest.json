@@ -1,7 +1,7 @@
 {
   "main.css": "/static/css/main.534d9f46.chunk.css",
-  "main.js": "/static/js/main.b1de20d3.chunk.js",
-  "main.js.map": "/static/js/main.b1de20d3.chunk.js.map",
+  "main.js": "/static/js/main.a8b0f3b2.chunk.js",
+  "main.js.map": "/static/js/main.a8b0f3b2.chunk.js.map",
   "static/css/1.bc081449.chunk.css": "/static/css/1.bc081449.chunk.css",
   "static/js/1.c33645b2.chunk.js": "/static/js/1.c33645b2.chunk.js",
   "static/js/1.c33645b2.chunk.js.map": "/static/js/1.c33645b2.chunk.js.map",
@@ -17,7 +17,7 @@
   "static/media/IMG_1715.jpg": "/static/media/IMG_1715.421170f3.jpg",
   "static/media/profile-bg.png": "/static/media/profile-bg.ddb2254b.png",
   "static/media/my-cartoon2.png": "/static/media/my-cartoon2.d1636e53.png",
-  "static/media/Panupong_Leenawarat_resume.pdf": "/static/media/Panupong_Leenawarat_resume.ce479602.pdf",
+  "static/media/Panupong_Leenawarat_resume.pdf": "/static/media/Panupong_Leenawarat_resume.584c8cd8.pdf",
   "static/media/umass.png": "/static/media/umass.cb499467.png",
   "static/media/bhcc.png": "/static/media/bhcc.2ba6a1d5.png",
   "static/media/django.png": "/static/media/django.9bc0884b.png",
@@ -183,9 +183,9 @@
   "static/media/IMG_7065.jpg": "/static/media/IMG_7065.f852a843.jpg",
   "static/media/IMG_7067.jpg": "/static/media/IMG_7067.17e62225.jpg",
   "static/media/IMG_7077.jpg": "/static/media/IMG_7077.eff19111.jpg",
-  "static/css/main.534d9f46.chunk.css.map": "/static/css/main.534d9f46.chunk.css.map",
   "static/css/1.bc081449.chunk.css.map": "/static/css/1.bc081449.chunk.css.map",
+  "static/css/main.534d9f46.chunk.css.map": "/static/css/main.534d9f46.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.90afe217364674d8164e7a42f30a5815.js": "/precache-manifest.90afe217364674d8164e7a42f30a5815.js",
+  "precache-manifest.9fa81913a7c9750808bcfe76ff7a2ebf.js": "/precache-manifest.9fa81913a7c9750808bcfe76ff7a2ebf.js",
   "service-worker.js": "/service-worker.js"
 }
