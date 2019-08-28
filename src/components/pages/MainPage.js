@@ -79,7 +79,7 @@ const HomepageLayout = () => (
         <Grid.Row>
           <Grid.Column width={8}>
             <Header as="h3" style={{ fontSize: "2em" }}>
-              Hi, I'm Tie!
+              Hi, I'm Toto!
             </Header>
             <p style={{ fontSize: "1.33em" }}>
               On this site, you will discover who I am as a person aside from
@@ -180,7 +180,7 @@ const HomepageLayout = () => (
           comfort zone to achieve my goal of being memorable. That is my
           passion.
         </p>
-        <Button as="a" size="large">
+        <Button as={Link} to="/journey" size="large">
           Read More
         </Button>
         <Divider

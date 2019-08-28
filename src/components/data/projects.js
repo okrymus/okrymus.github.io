@@ -1,5 +1,15 @@
 const projects = [
   {
+    projectId: 21,
+    name: "8-Puzzle",
+    shortDescription: "Apply AI to solve  the  eight puzzle game",
+    description:
+      "Implementing A-star search with different distance heuristics such as Manhattan, RowCol, MisPlaced Tile and None. The GUI allows users to easily play the game. ",
+    date: "2019",
+    type: ["python", "AI", "PyQt", "GUI"],
+    sourceCode: "https://github.com/okrymus/8-puzzle"
+  },
+  {
     projectId: 1,
     name: "Discourz",
     shortDescription:
