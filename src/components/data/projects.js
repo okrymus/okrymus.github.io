@@ -11,6 +11,16 @@ const projects = [
     sourceCode: "https://github.com/okrymus/8-puzzle"
   },
   {
+    projectId: 22,
+    name: "N-Queen",
+    shortDescription: "",
+    description: "",
+    date: "2019",
+    type: ["python", "AI", "PyQt", "GUI"],
+    gif: [["Example", "RuIoLmQrzC.gif"]],
+    sourceCode: ""
+  },
+  {
     projectId: 1,
     name: "Discourz",
     shortDescription:

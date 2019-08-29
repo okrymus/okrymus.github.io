@@ -16,6 +16,7 @@ import GifPlayer from "react-gif-player";
 
 import { Container } from "reactstrap";
 import projects from "../data/projects";
+import Nqueen from "../pages/game/N-queen/Nqueen";
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${
   pdfjs.version
@@ -78,22 +79,6 @@ export default class SubProjectPage extends Component {
               </p>
             </Accordion.Content>
 
-            {/* <Accordion.Title
-              active={activeIndex === 1}
-              index={1}
-              onClick={this.handleClick}
-            >
-              <Icon name="dropdown" />
-              What kinds of dogs are there?
-            </Accordion.Title>
-            <Accordion.Content active={activeIndex === 1}>
-              <p>
-                There are many breeds of dogs. Each breed varies in size and
-                temperament. Owners often select a breed of dog that they find
-                to be compatible with their own lifestyle and desires from a
-                companion.
-              </p>
-            </Accordion.Content> */}
             {this.project.team && (
               <div>
                 <Accordion.Title
@@ -165,25 +150,10 @@ export default class SubProjectPage extends Component {
                   />
                 </div>
               ))}
-              {/* <div>
-                <GifPlayer
-                  style={{
-                    width: window.innerWidth <= 500 ? window.innerWidth : "100%"
-                  }}
-                  gif={require(`../img/projects/${this.project.name}/${
-                    this.project.gif[0][1]
-                  }`)}
-                  autoplay
-                />
-              </div> */}
             </Grid>
           )}
           {this.project.pdf && (
             <Grid centered>
-              {/* <Grid.Row>
-                <Button onClick={this.goToPrevPage}>Prev</Button>
-                <Button onClick={this.goToNextPage}>Next</Button>
-              </Grid.Row> */}
               <Grid.Row>
                 <div
                   style={{
@@ -222,12 +192,19 @@ export default class SubProjectPage extends Component {
           )}
           {this.project.img &&
             this.project.img.map(image => (
-              <div>
-                <Image
-                  src={require(`../img/projects/${this.project.name}/${image}`)}
-                />
-              </div>
+              <Grid centered>
+                <div>
+                  <Image
+                    src={require(`../img/projects/${
+                      this.project.name
+                    }/${image}`)}
+                  />
+                </div>
+              </Grid>
             ))}
+          <Grid centered>
+            <Nqueen />
+          </Grid>
 
           <Header as="h3" style={{ fontSize: "2em" }}>
             Panupong Leenawarat
