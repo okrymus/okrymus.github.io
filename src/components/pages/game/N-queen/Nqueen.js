@@ -1,5 +1,9 @@
+import SvgLines from "react-mt-svg-lines"; // ES6+
+
 import React, { Component } from "react";
 import Board from "./board";
+
+import Queen from "./pieces/queen";
 
 class Nqueen extends Component {
   render() {

@@ -1,192 +1,121 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 
-import "./board.css";
+import Queen from "./pieces/queen";
+import Boardchecker from "./boardchecker";
+
+const COL_NAMES = "abcdefgh";
 
 class Board extends Component {
-  static propTypes = {
-    G: PropTypes.any.isRequired,
-    ctx: PropTypes.any.isRequired,
-    moves: PropTypes.any.isRequired,
-    playerID: PropTypes.string,
-    isActive: PropTypes.bool,
-    isMultiplayer: PropTypes.bool,
-    isConnected: PropTypes.bool,
-    isPreview: PropTypes.bool
+  state = {
+    selected: "",
+    highlighted: "",
+    dragged: ""
   };
-
-  // onClick = id => {
-  //   if (this.isActive(id)) {
-  //     this.props.moves.clickCell(id);
-  //     console.log("test");
-  //   }
-  // };
-  constructor() {
-    super();
-
-    this.state = {
-      black: true
-    };
-  }
-  onClick = id => {
-    // if (this.isActive(id)) {
-    //   this.props.moves.clickCell(id);
-    // }
-    this.setState({ black: !this.state.black });
-    // console.log(this.isActive(id));
-  };
-
-  isActive(id) {
-    console.log("test");
-    return this.props.isActive;
-  }
-
   render() {
-    let btn_class = this.state.black ? "active" : "";
-    let tbody = [];
-    for (let i = 0; i < 3; i++) {
-      let cells = [];
-      for (let j = 0; j < 3; j++) {
-        const id = 3 * i + j;
-        cells.push(
-          <td key={id} className={btn_class} onClick={() => this.onClick(id)} />
-        );
-      }
-      tbody.push(<tr key={i}>{cells}</tr>);
-    }
-
     return (
       <div>
-        <table id="board">
-          <tbody>{tbody}</tbody>
-        </table>
+        <Boardchecker>{this._getPieces()}</Boardchecker>
       </div>
     );
+  }
+
+  _getPieces() {
+    let dragged = [];
+    let result = [];
+    for (let y = 1; y <= 8; y++) {
+      for (let x = 0; x < 8; x++) {
+        let square = COL_NAMES[x] + y;
+        // let piece = this.chess.get(square);
+        // if (piece) {
+        const token = (
+          <div square={square}>
+            <Queen />
+          </div>
+        );
+        if (square === this.state.dragged) {
+          result.push(token);
+        } else {
+          dragged.push(token);
+        }
+      }
+    }
+    return dragged.concat(result);
   }
 }
 
 export default Board;
 
 // import React, { Component } from "react";
-// // import Game from
-// import "./style.css";
+// import PropTypes from "prop-types";
 
-// export default class Board extends Component {
-//   var Board = {};
+// import "./board.css";
+
+// class Board extends Component {
+//   // static propTypes = {
+//   //   moves: PropTypes.any.isRequired,
+//   //   isActive: PropTypes.bool
+//   // };
+
+//   // onClick = id => {
+//   //   if (this.isActive(id)) {
+//   //     this.props.moves.clickCell(id);
+//   //     console.log("test");
+//   //   }
+//   // };
+//   constructor() {
+//     super();
+
+//     this.state = {
+//       actives: []
+//     };
+
+//     // this.actives = [];
+//   }
+
+//   onClick = id => {
+//     if (!this.isActive(id)) {
+//       this.state.actives.push(id);
+//     } else {
+//       const filteredItems = this.state.actives.filter(item => item !== id);
+//       this.state.actives = filteredItems;
+//     }
+
+//     this.setState(this.state.actives);
+
+//     console.log(id);
+//   };
+
+//   isActive(id) {
+//     return this.state.actives.find(element => element === id);
+//   }
 
 //   render() {
+//     let tbody = [];
 
-//     Board.elements = {
-//       "1": document.getElementById("board-item-1"),
-//       "2": document.getElementById("board-item-2"),
-//       "3": document.getElementById("board-item-3"),
-//       "4": document.getElementById("board-item-4"),
-//       "5": document.getElementById("board-item-5"),
-//       "6": document.getElementById("board-item-6"),
-//       "7": document.getElementById("board-item-7"),
-//       "8": document.getElementById("board-item-8")
-//     };
+//     for (let i = 0; i < 3; i++) {
+//       let cells = [];
+//       for (let j = 0; j < 3; j++) {
+//         const id = 3 * i + j;
+//         cells.push(
+//           <td
+//             key={id}
+//             className={this.isActive(id) ? "active" : ""}
+//             onClick={() => this.onClick(id)}
+//           />
+//         );
+//       }
+//       tbody.push(<tr key={i}>{cells}</tr>);
+//     }
 
-//     Board.draw = function(state) {
-//       state.split("").forEach(function(item, index) {
-//         if (item == "0") return;
-
-//         var element = Board.elements[item];
-//         var row = Math.floor(index / 3);
-//         var column = index % 3;
-
-//         element.style.top = row * element.offsetHeight + "px";
-//         element.style.left = column * element.offsetWidth + "px";
-//       });
-//     };
 //     return (
 //       <div>
-//         <div id="board">
-//           <div id="board-item-1" className="board-item">
-//             1
-//           </div>
-//           <div id="board-item-2" className="board-item">
-//             2
-//           </div>
-//           <div id="board-item-3" className="board-item">
-//             3
-//           </div>
-//           <div id="board-item-4" className="board-item">
-//             4
-//           </div>
-//           <div id="board-item-5" className="board-item">
-//             5
-//           </div>
-//           <div id="board-item-6" className="board-item">
-//             6
-//           </div>
-//           <div id="board-item-7" className="board-item">
-//             7
-//           </div>
-//           <div id="board-item-8" className="board-item">
-//             8
-//           </div>
-//         </div>
-
-//         {Board.draw("012345678")}
+//         <table id="board">
+//           <tbody>{tbody}</tbody>
+//         </table>
 //       </div>
 //     );
 //   }
 // }
 
-// // var Board = {};
-
-// // Board.elements = {
-// //   "1": document.getElementById("board-item-1"),
-// //   "2": document.getElementById("board-item-2"),
-// //   "3": document.getElementById("board-item-3"),
-// //   "4": document.getElementById("board-item-4"),
-// //   "5": document.getElementById("board-item-5"),
-// //   "6": document.getElementById("board-item-6"),
-// //   "7": document.getElementById("board-item-7"),
-// //   "8": document.getElementById("board-item-8")
-// // };
-
-// // Board.draw = function(state) {
-// //   state.split("").forEach(function(item, index) {
-// //     if (item == "0") return;
-
-// //     var element = Board.elements[item];
-// //     var row = Math.floor(index / 3);
-// //     var column = index % 3;
-
-// //     element.style.top = row * element.offsetHeight + "px";
-// //     element.style.left = column * element.offsetWidth + "px";
-// //   });
-// // };
-
-// // Board.replayTimeout = null;
-// // Board.replayAnimationTimeout = null;
-
-// // // Board.replay = function(moves) {
-// // //   Board.clearReplay();
-
-// // //   var initialState = moves.shift();
-// // //   Board.draw(initialState);
-// // //   window.network.selectNodes([initialState]);
-
-// // // var animate = function(moves) {
-// // //   var move = moves.shift();
-// // //   if (!move) return boardDiv.classList.remove("animation");
-// // //   Board.draw(move);
-// // //   window.network.selectNodes([move]);
-// // //   Board.replayAnimationTimeout = setTimeout(animate.bind(null, moves), 1000);
-// // // };
-
-// // //   Board.replayTimeout = setTimeout(function() {
-// // //     animate(moves);
-// // //   }, 1000);
-// // // };
-
-// // // Board.clearReplay = function() {
-// // //   clearTimeout(Board.replayTimeout);
-// // //   clearTimeout(Board.replayAnimationTimeout);
-// // //   boardDiv.classList.remove("animation");
-// // // };
-
-// // export default Board;
+// export default Board;

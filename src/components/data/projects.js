@@ -17,7 +17,6 @@ const projects = [
     description: "",
     date: "2019",
     type: ["python", "AI", "PyQt", "GUI"],
-    gif: [["Example", "RuIoLmQrzC.gif"]],
     sourceCode: ""
   },
   {
