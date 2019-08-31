@@ -1,16 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
-import {
-  Button,
-  Card,
-  Image,
-  Header,
-  Popup,
-  Label,
-  Grid,
-  Segment
-} from "semantic-ui-react";
+import { Button, Card, Image, Label } from "semantic-ui-react";
 
 import django from "../img/django.png";
 import python from "../img/python.png";

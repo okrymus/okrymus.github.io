@@ -27,8 +27,7 @@
     "react-vertical-timeline-component": "^2.3.1",
     "reactstrap": "^7.1.0",
     "semantic-ui-css": "^2.4.1",
-    "semantic-ui-react": "^0.84.0",
-    "boardgame.io": "^0.32.1"
+    "semantic-ui-react": "^0.84.0"
   },
   "scripts": {
     "start": "react-scripts start",

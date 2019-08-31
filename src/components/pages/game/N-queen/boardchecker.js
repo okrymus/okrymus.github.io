@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import { Grid } from "boardgame.io/ui";
+// import { Grid } from "./ui";
 // import { Segment } from "semantic-ui-react";
-// import Grid from "./grid";
+import Grid from "./grid";
 
 import Queen from "./pieces/queen";
 import "./board.css";
@@ -12,14 +12,15 @@ export default class Boardchecker extends Component {
     rows: 8,
     cols: 8,
     onClick: () => {},
-    primaryColor: "green",
+    primaryColor: "#0E6EB8",
     secondaryColor: "black",
     highlightedSquares: {},
     style: {}
   };
 
-  onClick = id => {
-    console.log(id);
+  onClick = ({ x, y }) => {
+    // console.log(x);
+    this.props.onClick({ square: cartesianToAlgebraic(x, y, this.props.rows) });
   };
 
   render() {
@@ -29,8 +30,6 @@ export default class Boardchecker extends Component {
     const tokens = React.Children.map(this.props.children, child => {
       const square = child.props.square;
       const { x, y } = algebraicToCartesian(square, this.props.rows);
-      //   const test = React.cloneElement(child, { x, y });
-      //   console.log(test.props.x);
       return React.cloneElement(child, { x, y });
     });
 
@@ -46,8 +45,16 @@ export default class Boardchecker extends Component {
       }
     }
 
+    // Add highlighted squares.
+    for (const square in this.props.highlightedSquares) {
+      const { x, y } = algebraicToCartesian(square, this.props.rows);
+      const key = `${x},${y}`;
+      colorMap[key] = this.props.highlightedSquares[square];
+    }
+
     // console.log(colorMap);
     return (
+      //   <div>{tokens}</div>
       <Grid rows={rows} cols={cols} onClick={this.onClick} colorMap={colorMap}>
         {tokens}
       </Grid>
@@ -65,7 +72,6 @@ Boardchecker.PropTypes = {
   secondaryColor: PropTypes.string,
   highlightedSquares: PropTypes.object,
   style: PropTypes.object,
-  // colorMap: PropTypes.object,
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.element),
     PropTypes.element

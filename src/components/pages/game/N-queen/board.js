@@ -1,23 +1,63 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+import Token from "./token";
+import Game from "./game";
 
 import Queen from "./pieces/queen";
 import Boardchecker from "./boardchecker";
 
 const COL_NAMES = "abcdefgh";
+const HIGHLIGHTED_COLOR = "yellow";
 
 class Board extends Component {
+  constructor(props) {
+    super(props);
+    this.game = new Game(8);
+  }
+
   state = {
     selected: "",
     highlighted: "",
     dragged: ""
   };
   render() {
+    console.log(this.game.Tiles);
     return (
       <div>
-        <Boardchecker>{this._getPieces()}</Boardchecker>
+        <Boardchecker
+          style={{ width: "600" }}
+          onClick={this.click}
+          highlightedSquares={this._getHighlightedSquares()}
+        >
+          {this._getPieces()}
+        </Boardchecker>
       </div>
     );
+  }
+
+  click = ({ square }) => {
+    // this.setState({ ...this.state, selected: square, highlighted: square });
+
+    // } else if (this.state.selected) {
+    //   this._tryMove(this.state.selected, square);
+    // }
+
+    if (!this.state.selected) {
+      this.setState({ ...this.state, selected: square, highlighted: square });
+    } else if (this.state.selected) {
+      this.game.move(this.state.selected, square);
+      this.setState({ ...this.state, selected: "", highlighted: "" });
+    }
+    console.log(this.game.Tiles);
+  };
+
+  _getHighlightedSquares() {
+    let result = {};
+
+    if (this.state.highlighted) {
+      result[this.state.highlighted] = HIGHLIGHTED_COLOR;
+    }
+    return result;
   }
 
   _getPieces() {
@@ -26,17 +66,29 @@ class Board extends Component {
     for (let y = 1; y <= 8; y++) {
       for (let x = 0; x < 8; x++) {
         let square = COL_NAMES[x] + y;
-        // let piece = this.chess.get(square);
-        // if (piece) {
-        const token = (
-          <div square={square}>
-            <Queen />
-          </div>
-        );
-        if (square === this.state.dragged) {
-          result.push(token);
-        } else {
-          dragged.push(token);
+        let piece = this.game.get(square);
+        // console.log(piece);
+        if (piece) {
+          // console.log(square);
+          const token = (
+            <Token
+              // draggable={true}
+              // shouldDrag={this._shouldDrag}
+              // onDrag={this._onDrag}
+              // onDrop={this._onDrop}
+              square={square}
+              animate={true}
+              // key={this._getInitialCell(square)}
+            >
+              <Queen />
+            </Token>
+          );
+
+          if (square === this.state.dragged) {
+            result.push(token);
+          } else {
+            dragged.push(token);
+          }
         }
       }
     }

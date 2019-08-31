@@ -1,3 +1,105 @@
+// import React, { Component } from "react";
+// import PropTypes from "prop-types";
+// import Queen from "./pieces/queen";
+
+// class Grid extends Component {
+//   _getGrid() {
+//     let squares = [];
+//     for (let x = 0; x < this.props.cols; x++) {
+//       for (let y = 0; y < this.props.rows; y++) {
+//         squares.push(
+//           <Square x={x} y={y} style={{ fill: this._getCellColor(x, y) }} />
+//         );
+//       }
+//     }
+//     return squares;
+//   }
+
+//   _getCellColor(x, y) {
+//     const key = `${x},${y}`;
+//     let color = "white";
+//     if (key in this.props.colorMap) {
+//       color = this.props.colorMap[key];
+//     }
+//     return color;
+//   }
+
+//   render() {
+//     const tokens = React.Children.map(this.props.children, child => {
+//       const { x, y } = { x: child.props.x, y: child.props.y };
+//       const test = React.cloneElement(child, { x, y });
+//       console.log(test);
+//       return React.cloneElement(child, { x, y });
+//     });
+
+//     return (
+//       <div>
+//         <svg viewBox={"0 0 400 400"}>
+//           <g>{this._getGrid()}</g>
+//           {tokens}
+
+//           {/* {tokens} */}
+//         </svg>
+//       </div>
+//     );
+//   }
+// }
+
+// export default Grid;
+
+// Grid.PropTypes = {
+//   rows: PropTypes.number.isRequired,
+//   cols: PropTypes.number.isRequired,
+//   colorMap: PropTypes.object,
+//   children: PropTypes.oneOfType([
+//     PropTypes.arrayOf(PropTypes.element),
+//     PropTypes.element
+//   ])
+// };
+
+// export class Square extends Component {
+//   render() {
+//     const tx = this.props.x * this.props.size;
+//     const ty = this.props.y * this.props.size;
+
+//     // If no child, render a square.
+//     let children = (
+//       <rect
+//         style={this.props.style}
+//         width={this.props.size}
+//         height={this.props.size}
+//         x={0}
+//         y={0}
+//       />
+//     );
+
+//     console.log(this.props.children);
+//     if (this.props.children) {
+//       console.log("this.props.children");
+//       children = this.props.children;
+//     }
+
+//     return <g transform={`translate(${tx}, ${ty})`}>{children}</g>;
+//   }
+// }
+
+// Square.defaultProps = { size: 50, x: 0, y: 0, style: { fill: "#fff" } };
+
+// Square.PropTypes = {
+//   x: PropTypes.number.isRequired,
+//   y: PropTypes.number.isRequired,
+//   style: PropTypes.any,
+//   children: PropTypes.element
+// };
+
+/*
+ * Copyright 2018 The boardgame.io Authors
+ *
+ * Use of this source code is governed by a MIT-style
+ * license that can be found in the LICENSE file or at
+ * https://opensource.org/licenses/MIT.
+ */
+
 import React from "react";
 import PropTypes from "prop-types";
 
@@ -114,14 +216,18 @@ export default class Grid extends React.Component {
     });
 
     return (
-      <svg
-        ref={this._svgRef}
-        viewBox={"0 0 " + this.props.cols + " " + this.props.rows}
-        style={this.props.style}
-      >
-        <g>{this._getGrid()}</g>
-        {tokens}
-      </svg>
+      <div>
+        <svg
+          ref={this._svgRef}
+          viewBox={"0 0 " + this.props.cols + " " + this.props.rows}
+          style={this.props.style}
+          height="100%"
+          width="100%"
+        >
+          <g>{this._getGrid()}</g>
+          {tokens}
+        </svg>
+      </div>
     );
   }
 }
@@ -221,22 +327,9 @@ export class Square extends React.Component {
       children = this.props.children;
     }
 
-    if (this.props.svgRef) {
-      return (
-        <g
-          ref={this._gRef}
-          onClick={this.onClick}
-          onMouseOver={this.onMouseOver}
-          onMouseOut={this.onMouseOut}
-          transform={`translate(${tx}, ${ty})`}
-        >
-          {children}
-        </g>
-      );
-    }
-
+    // if (this.props.svgRef) {
     return (
-      <svg
+      <g
         ref={this._gRef}
         onClick={this.onClick}
         onMouseOver={this.onMouseOver}
@@ -244,7 +337,20 @@ export class Square extends React.Component {
         transform={`translate(${tx}, ${ty})`}
       >
         {children}
-      </svg>
+      </g>
     );
+    // }
+
+    // return (
+    //   <svg
+    //     ref={this._gRef}
+    //     onClick={this.onClick}
+    //     onMouseOver={this.onMouseOver}
+    //     onMouseOut={this.onMouseOut}
+    //     transform={`translate(${tx}, ${ty})`}
+    //   >
+    //     {children}
+    //   </svg>
+    // );
   }
 }
