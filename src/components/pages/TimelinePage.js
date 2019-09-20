@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Header, Icon, Container, Segment } from "semantic-ui-react";
+import { Icon, Container } from "semantic-ui-react";
 import {
   VerticalTimeline,
   VerticalTimelineElement

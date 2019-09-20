@@ -202,10 +202,11 @@ export default class SubProjectPage extends Component {
                 </div>
               </Grid>
             ))}
-          <Grid centered>
-            <Nqueen />
-          </Grid>
-
+          {this.project.name === "N-Queen" && (
+            <Grid centered>
+              <Nqueen />
+            </Grid>
+          )}
           <Header as="h3" style={{ fontSize: "2em" }}>
             Panupong Leenawarat
           </Header>

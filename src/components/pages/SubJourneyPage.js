@@ -1,15 +1,12 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import {
-  Accordion,
-  Icon,
   Segment,
   Header,
   Button,
   Divider,
   Image,
   List,
-  Dimmer,
   Embed
 } from "semantic-ui-react";
 import { Container } from "reactstrap";

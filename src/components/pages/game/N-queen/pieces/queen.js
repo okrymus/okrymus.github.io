@@ -1,5 +1,3 @@
-import SvgLines from "react-mt-svg-lines"; // ES6+
-
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { Route } from "react-router-dom";
 import TopNavigation from "./components/nevigation/TopNavigation";
 import HomePage from "./components/pages/HomePage";

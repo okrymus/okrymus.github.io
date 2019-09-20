@@ -1,5 +1,15 @@
 const projects = [
   {
+    projectId: 23,
+    name: "VR Periodic Table",
+    shortDescription: "This is a simple experiment periodic table via webVR.",
+    description:
+      "This is a simple experiment periodic table via webVR. If you have no VR device, it is okey. You also can experince with 360 degree view like it bring you into a small class room.",
+    date: "2019",
+    type: ["react", "Aframe", "WebVR", "AWS"],
+    demo: "https://okrymus.com/periodicTable"
+  },
+  {
     projectId: 21,
     name: "8-Puzzle",
     shortDescription: "Apply AI to solve  the  eight puzzle game",

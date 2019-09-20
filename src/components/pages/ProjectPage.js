@@ -1,17 +1,6 @@
 import React from "react";
-import {
-  Button,
-  Card,
-  Image,
-  Segment,
-  List,
-  Header,
-  Divider,
-  Container
-} from "semantic-ui-react";
-// import { Container } from "reactstrap";
+import { Card, Segment, Container } from "semantic-ui-react";
 import ProjectForm from "../forms/ProjectForm";
-import SideNev from "../nevigation/SideNavigation";
 import projects from "../data/projects";
 
 const CardExampleGroups = () => (

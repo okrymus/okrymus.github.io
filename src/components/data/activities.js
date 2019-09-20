@@ -4,7 +4,7 @@ const activities = [
     location: "University of Massachusetts Amherst, MA",
     description:
       "Machine Learning, Artificial Intelligence, Web Programming, Robotic Programming, Algorithms, Reasoning Under Uncertainty, Social Issues in Computing, Data Structures, Computer Systems, Principles of Data Science, Practice and Applications of Data Management, Applied Cryptography",
-    date: "2017-Today",
+    date: "2017-May 2019",
     icon: "graduation cap",
     background: "rgb(233, 30, 99)"
   },

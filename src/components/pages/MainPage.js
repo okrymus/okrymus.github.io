@@ -10,7 +10,6 @@ import {
   Icon,
   Image,
   List,
-  Responsive,
   Segment
 } from "semantic-ui-react";
 import myimg from "../img/my_img.jpg";
@@ -223,7 +222,7 @@ const HomepageLayout = () => (
                   href="https://github.com/okrymus"
                   target="_blank"
                   circular
-                  color="github"
+                  color="grey"
                   icon="github"
                 />
               </div>

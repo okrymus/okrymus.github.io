@@ -85,6 +85,16 @@ class ProjectForm extends React.Component {
                 View Source
               </Button>
             )}
+            {this.props.project.demo && (
+              <Button
+                basic
+                color="red"
+                target="_blank"
+                href={this.props.project.demo}
+              >
+                Demo
+              </Button>
+            )}
           </div>
         </Card.Content>
       </Card>

@@ -1,18 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
-import {
-  Button,
-  Card,
-  Image,
-  Header,
-  Popup,
-  Label,
-  Grid,
-  Segment,
-  Icon,
-  Modal
-} from "semantic-ui-react";
+import { Button, Card, Image, Icon } from "semantic-ui-react";
 
 class ProjectForm extends React.Component {
   state = {};
