@@ -28,7 +28,7 @@
   "static/media/cplusplus.png": "/static/media/cplusplus.58393424.png",
   "static/media/java.png": "/static/media/java.b03d8dde.png",
   "static/media/android.png": "/static/media/android.e7412a3b.png",
-  "static/media/semantic.min.css": "/static/media/icons.962a1bf3.svg",
+  "static/media/semantic.min.css": "/static/media/brand-icons.a1a749e8.svg",
   "static/media/RuIoLmQrzC.gif": "/static/media/RuIoLmQrzC.6bce1fc7.gif",
   "static/media/deposit.gif": "/static/media/deposit.555477ca.gif",
   "static/media/transfer.gif": "/static/media/transfer.d1cc5edc.gif",
@@ -184,9 +184,9 @@
   "static/media/IMG_7065.jpg": "/static/media/IMG_7065.f852a843.jpg",
   "static/media/IMG_7067.jpg": "/static/media/IMG_7067.17e62225.jpg",
   "static/media/IMG_7077.jpg": "/static/media/IMG_7077.eff19111.jpg",
-  "static/css/main.019e00a1.chunk.css.map": "/static/css/main.019e00a1.chunk.css.map",
   "static/css/1.97819f38.chunk.css.map": "/static/css/1.97819f38.chunk.css.map",
+  "static/css/main.019e00a1.chunk.css.map": "/static/css/main.019e00a1.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.f4ac1038c450f095e5b1a32eb89ff7a4.js": "/precache-manifest.f4ac1038c450f095e5b1a32eb89ff7a4.js",
+  "precache-manifest.0e928769e093622bb334a153afb509b4.js": "/precache-manifest.0e928769e093622bb334a153afb509b4.js",
   "service-worker.js": "/service-worker.js"
 }
