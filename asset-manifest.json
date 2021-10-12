@@ -50,7 +50,7 @@
   "static/media/android.png": "/static/media/android.e7412a3b.png",
   "static/media/360_icon.svg": "/static/media/360_icon.49533d93.svg",
   "static/media/oilTank.glb": "/static/media/oilTank.dc90e72f.glb",
-  "static/media/semantic.min.css": "/static/media/brand-icons.e8c322de.woff2",
+  "static/media/semantic.min.css": "/static/media/brand-icons.a1a749e8.svg",
   "static/media/mainPage.scss": "/static/media/2x.b5603986.jpg",
   "static/media/Toto_UMass_2255.jpg": "/static/media/Toto_UMass_2255.3fd3e008.jpg",
   "static/media/Credit Card ML.zip": "/static/media/Credit Card ML.44d9947f.zip",
@@ -271,9 +271,9 @@
   "static/media/IMG_7077.jpg": "/static/media/IMG_7077.eff19111.jpg",
   "static/media/whiteboard.glb": "/static/media/whiteboard.d06cf2b3.glb",
   "static/media/scientist.glb": "/static/media/scientist.906547a1.glb",
-  "static/css/1.04c16330.chunk.css.map": "/static/css/1.04c16330.chunk.css.map",
   "static/css/main.246954f9.chunk.css.map": "/static/css/main.246954f9.chunk.css.map",
+  "static/css/1.04c16330.chunk.css.map": "/static/css/1.04c16330.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.7fcaf80753c7e6f7d4ae70d15a575acf.js": "/precache-manifest.7fcaf80753c7e6f7d4ae70d15a575acf.js",
+  "precache-manifest.5e1b7fdec84ab7de5186276ad1b15cda.js": "/precache-manifest.5e1b7fdec84ab7de5186276ad1b15cda.js",
   "service-worker.js": "/service-worker.js"
 }
