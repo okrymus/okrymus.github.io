@@ -1,7 +1,7 @@
 {
   "main.css": "/static/css/main.246954f9.chunk.css",
-  "main.js": "/static/js/main.043d48b0.chunk.js",
-  "main.js.map": "/static/js/main.043d48b0.chunk.js.map",
+  "main.js": "/static/js/main.0307a3e4.chunk.js",
+  "main.js.map": "/static/js/main.0307a3e4.chunk.js.map",
   "static/css/1.04c16330.chunk.css": "/static/css/1.04c16330.chunk.css",
   "static/js/1.95db93b2.chunk.js": "/static/js/1.95db93b2.chunk.js",
   "static/js/1.95db93b2.chunk.js.map": "/static/js/1.95db93b2.chunk.js.map",
@@ -50,7 +50,7 @@
   "static/media/android.png": "/static/media/android.e7412a3b.png",
   "static/media/360_icon.svg": "/static/media/360_icon.49533d93.svg",
   "static/media/oilTank.glb": "/static/media/oilTank.dc90e72f.glb",
-  "static/media/semantic.min.css": "/static/media/brand-icons.a1a749e8.svg",
+  "static/media/semantic.min.css": "/static/media/brand-icons.c5ebe0b3.ttf",
   "static/media/mainPage.scss": "/static/media/2x.b5603986.jpg",
   "static/media/Toto_UMass_2255.jpg": "/static/media/Toto_UMass_2255.3fd3e008.jpg",
   "static/media/Credit Card ML.zip": "/static/media/Credit Card ML.44d9947f.zip",
@@ -100,7 +100,7 @@
   "static/media/intro.gif": "/static/media/intro.b30b5f9b.gif",
   "static/media/img.png": "/static/media/img.17edd7b3.png",
   "static/media/img_2.png": "/static/media/img_2.dcd4531a.png",
-  "static/media/Absence of legislation and technology to protect patients' biomedical specimens and genetic information.pdf": "/static/media/Absence of legislation and technology to protect patients' biomedical specimens and genetic information.de155881.pdf",
+  "static/media/Absence of legislation and technology to protect patients' biomedical specimens and genetic information.pdf": "/static/media/Absence of legislation and technology to protect patients' biomedical specimens and genetic information.2d393977.pdf",
   "static/media/CryptographyAndNote.pdf": "/static/media/CryptographyAndNote.657594e0.pdf",
   "static/media/Human Computer.pdf": "/static/media/Human Computer.5ead20ce.pdf",
   "static/media/Impacts_of_user_information_use_and_distribution_to_third_party_companies.pdf": "/static/media/Impacts_of_user_information_use_and_distribution_to_third_party_companies.cf624565.pdf",
@@ -274,6 +274,6 @@
   "static/css/main.246954f9.chunk.css.map": "/static/css/main.246954f9.chunk.css.map",
   "static/css/1.04c16330.chunk.css.map": "/static/css/1.04c16330.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.5e1b7fdec84ab7de5186276ad1b15cda.js": "/precache-manifest.5e1b7fdec84ab7de5186276ad1b15cda.js",
+  "precache-manifest.be194dbf8a5836fdf916ba65723a2ffb.js": "/precache-manifest.be194dbf8a5836fdf916ba65723a2ffb.js",
   "service-worker.js": "/service-worker.js"
 }
