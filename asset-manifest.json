@@ -1,7 +1,7 @@
 {
   "main.css": "/static/css/main.a94f190d.chunk.css",
-  "main.js": "/static/js/main.f760f9fc.chunk.js",
-  "main.js.map": "/static/js/main.f760f9fc.chunk.js.map",
+  "main.js": "/static/js/main.07081ae4.chunk.js",
+  "main.js.map": "/static/js/main.07081ae4.chunk.js.map",
   "proGallery_videoScrollHelper.js": "/static/js/proGallery_videoScrollHelper.23756254.chunk.js",
   "proGallery_videoScrollHelper.js.map": "/static/js/proGallery_videoScrollHelper.23756254.chunk.js.map",
   "proGallery_videoItem.js": "/static/js/proGallery_videoItem.827f0801.chunk.js",
@@ -29,7 +29,7 @@
   "static/media/Panupong_Leenawarat_resume.pdf": "/static/media/Panupong_Leenawarat_resume.2452b55c.pdf",
   "static/media/umass.png": "/static/media/umass.cb499467.png",
   "static/media/bhcc.png": "/static/media/bhcc.2ba6a1d5.png",
-  "static/media/semantic.min.css": "/static/media/brand-icons.a1a749e8.svg",
+  "static/media/semantic.min.css": "/static/media/flags.9c74e172.png",
   "static/media/mainPage.scss": "/static/media/2x.b5603986.jpg",
   "static/media/Toto_UMass_2255.jpg": "/static/media/Toto_UMass_2255.3fd3e008.jpg",
   "static/media/cover.jpg": "/static/media/cover.018f30de.jpg",
@@ -386,6 +386,6 @@
   "static/css/3.7e4d7ebf.chunk.css.map": "/static/css/3.7e4d7ebf.chunk.css.map",
   "static/css/main.a94f190d.chunk.css.map": "/static/css/main.a94f190d.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.90a2241f04ec7e7c169e4b331b648795.js": "/precache-manifest.90a2241f04ec7e7c169e4b331b648795.js",
+  "precache-manifest.5d2cf1f7bf4ad318f63ec96344587f9e.js": "/precache-manifest.5d2cf1f7bf4ad318f63ec96344587f9e.js",
   "service-worker.js": "/service-worker.js"
 }
