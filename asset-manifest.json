@@ -29,7 +29,7 @@
   "static/media/Panupong_Leenawarat_resume.pdf": "/static/media/Panupong_Leenawarat_resume.2452b55c.pdf",
   "static/media/umass.png": "/static/media/umass.cb499467.png",
   "static/media/bhcc.png": "/static/media/bhcc.2ba6a1d5.png",
-  "static/media/semantic.min.css": "/static/media/flags.9c74e172.png",
+  "static/media/semantic.min.css": "/static/media/brand-icons.a1a749e8.svg",
   "static/media/mainPage.scss": "/static/media/2x.b5603986.jpg",
   "static/media/Toto_UMass_2255.jpg": "/static/media/Toto_UMass_2255.3fd3e008.jpg",
   "static/media/cover.jpg": "/static/media/cover.018f30de.jpg",
@@ -383,9 +383,9 @@
   "static/media/DSC_2822.jpg": "/static/media/DSC_2822.73323b4a.jpg",
   "static/media/whiteboard.glb": "/static/media/whiteboard.d06cf2b3.glb",
   "static/media/scientist.glb": "/static/media/scientist.906547a1.glb",
-  "static/css/3.7e4d7ebf.chunk.css.map": "/static/css/3.7e4d7ebf.chunk.css.map",
   "static/css/main.a94f190d.chunk.css.map": "/static/css/main.a94f190d.chunk.css.map",
+  "static/css/3.7e4d7ebf.chunk.css.map": "/static/css/3.7e4d7ebf.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.5d2cf1f7bf4ad318f63ec96344587f9e.js": "/precache-manifest.5d2cf1f7bf4ad318f63ec96344587f9e.js",
+  "precache-manifest.40dedfb46cccfc87267cfe55e2078f00.js": "/precache-manifest.40dedfb46cccfc87267cfe55e2078f00.js",
   "service-worker.js": "/service-worker.js"
 }
